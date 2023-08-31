@@ -6,10 +6,10 @@
 
 
 <h3 align="center">SURE Trust - Skill Upgradation for Rural-youth Empowerment Trust</h3>
-  <h2> Data Structures and Algorithms with C++ - G1 </h2>
+  <h2> Full Stack Development - G15 </h2>
 </div>
 
-Welcome to the SURE Trust G1 Data Structures and Algorithms with C++ Training repository for Mechanical Engineers. This repository serves as a central hub for all materials and resources related to the training course during the second batch of training AutoCad & Solidworks course.
+Welcome to the SURE Trust G15 Full Stack Development Training repository. This repository serves as a central hub for all materials and resources related to the training course during the second batch of training Full Stack Development course.
 
 ## About SURE Trust
 
@@ -17,7 +17,7 @@ SURE Trust is a registered NGO committed to eradicating the disparity between sk
 
 ## AutoCad Course Registration
 
-To enroll in the AutoCad course for Mechanical Engineers, please visit the official SURE Trust website: [Course Registration](https://suretrustforruralyouth.com/courses/132)
+To enroll in the FSD course, please visit the official SURE Trust website: [Course Registration](https://suretrustforruralyouth.com/courses/132)
 
 ## Repository Description
 
