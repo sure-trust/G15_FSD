@@ -17,7 +17,7 @@ SURE Trust is a registered NGO committed to eradicating the disparity between sk
 
 ## Full Stack Development Course Registration
 
-To enroll in the FSD course, please visit the official SURE Trust website: [Course Registration](https://suretrustforruralyouth.com/courses/132)
+To enroll in the FSD course, please visit the official SURE Trust website: [Course Registration](https://suretrustforruralyouth.com/courses/37)
 
 ## Repository Description
 
