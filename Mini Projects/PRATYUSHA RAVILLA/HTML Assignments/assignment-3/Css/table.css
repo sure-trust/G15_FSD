@@ -1,0 +1,22 @@
+table
+{
+    border: 10px solid black;
+    padding:5px;
+    margin: 10px;
+    text-align: center;
+    width: 1000px;
+    height: 500px;
+}
+
+h1{
+     text-align:left;
+}
+th{
+    background-color: plum;
+    font-size: 30px;
+}
+td{
+    text-align: left;
+    background-color:skyblue;
+    font-size: 30px;
+}

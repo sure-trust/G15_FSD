@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cat app</title>
+</head>
+<body>
+    <h1>About cats</h1>
+    <section> <!--section is used to separate the context-->
+        <h2> Cat Photo</h2>
+         <!-- display img-->
+         <!--<img src="../img/cat.jpg">-->
+           <!-- link  to an img-->
+          <!--<a href="../img/cat.jpg">click here to go</a>-->
+    <!--link an img in the para-->
+    <!--<p>you can see more <a href="https://pratyushachowdary.com">cat images</a>here</p>-->
+    <!-- target="_blank" is used to open the link in new tab, it adds inside the <a> tag-->
+        <p>Click here to see more <a target="_blank" href="../img/cat.jpg">cat images</a></p>
+        <!--Turn the image into a link-->
+     <a href="../img/cat.jpg"><img src="../img/cat.jpg" alt="cat image"></a>  
+   </section>
+   <section>
+    <h2>Cat lists</h2>
+    <h3>Things cats love:</h3>
+    <ul>
+        <li>cat nip</li>
+        <li>laser pointer</li>
+        <li>lasagna</li>
+    </ul>
+    <figure><!--figure element represents self contained content allow you to associate an image with a caption-->
+        <img src="../img/lasagna.jpg" alt="food" width="30%">
+        <figcaption>cats <em>love </em>lasagna</figcaption>
+      <!--figcaption element is used to add a caption to the img with in figure element-->
+    </figure>
+    <h3> cats hate few things</h3>
+    <ol>
+        <li>flea treatment</li>
+        <li>thunder</li>
+        <li>other cats</li>
+        </ol>
+        <figure>
+            <img src="../img/cats.jpg" alt="other cats" width="23%">
+            <figcaption>cats <string>hate</string> other cats</figcaption>
+        </figure>
+   </section>
+   <section>
+    <h3>cat form</h3>
+    <!--The action attribute indicates where form data should be sent-->
+    <form action="../img/cat.jpg">
+     <!--The input element allows you several ways to collect data from a web form.-->  
+     <!--There are many kinds of inputs you can create using the type attribute.--> 
+     <!--In order for a form's data to be accessed by the location specified in
+         the action attribute, you must give the text field a name attribute and assign it a value to represent the data being submitted.-->
+    <!--Placeholder text is used to give people a hint about what kind of information to enter into an input.-->
+    <!--To prevent a user from submitting your form when required information is missing, you need to add the required attribute to an input element.--> 
+    <!--You can use radio buttons for questions where you want only one answer out of multiple options.-->
+    <!--label elements are used to help associate the text for an input element with the input element itself -->
+    <!--The id attribute is used to identify specific HTML elements.-->
+    <!--Notice that both radio buttons can be selected at the same time. To make it so selecting one radio button automatically deselects the other, both buttons must have a name attribute with the same value.
+
+    Add the name attribute with the value indoor-outdoor to both radio buttons.-->
+    <fieldset> <!--The fieldset element is used to group related inputs and labels together in a web form.-->
+    <legend>Is your cat an indoor or outdoor cat?</legend>
+    <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked>indoor</label>
+    <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor">outdoor</label>
+   </fieldset>
+   <fieldset>
+    <legend>What's your cat's personality</legend>
+    <input type="checkbox" id="loving" name="personality" value="loving" checked> 
+    <label for="Loving">Loving</label>
+    <input type="checkbox" id="lazy" name="personality" value="lazy">
+    <label for="lazy">Lazy</label>
+    <input type="checkbox" id="energetic" name="personality" value="energetic">
+    <label for="energetic">Energetic</label>
+   </fieldset>
+   <input type="text" name="catphoto" placeholder="cat photo" required>
+    <button type="submit">Submit</button>
+    </form>
+   </section>
+   <footer>
+    <p>No copyright - <a href="https://www.pratyushachowdary.com">pratyusha chowdary</a></p>
+</footer>
+</body>
+</html>
