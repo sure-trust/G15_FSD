@@ -1,0 +1,36 @@
+body{
+    margin:0%;
+    padding:10%;
+    background: linear-gradient(135deg, #153677, #4e085f);
+}
+
+.container{
+   text-align: center;
+   transform:translate(-50%, -50%); 
+   font-size: 90px;
+   top:50%;
+   left:50%;
+   width: 25%;
+   height:60%;
+   position:absolute;
+   font-weight: bold;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background-color:rgb(212, 176, 245);
+   border: none;
+   padding: 10px 10px;
+   border-radius: 20px;
+
+}
+#timeDisplay{
+    background-color: rgb(186, 232, 246);
+    border:2px solid rgb(136, 120, 120);
+    border-radius: 30px;
+    padding:10px 10px;
+    font-size: 40px;
+    
+}
+.container h4 img{
+    width:100px;
+     margin-left:10px;
+}
+
