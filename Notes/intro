@@ -1,0 +1,19 @@
+Programming is a way to give instructions to the computer , may be sequential instructions ,
+selections or looping instructions 
+
+we have to give exact steps
+
+Program will be those exact steps written in a programming language
+
+what is Ecmascript ?
+ECMAScript is the standards / specifications on which Javascript is based.
+
+JavaScript and ECMAScript can almost be always used interchangeably
+
+
+Q) How to execute Javascript ?
+a)in the browser -- you can open the console and use it for REPL
+b) by using script tag inside html page
+c) using node.js
+
+
