@@ -1,0 +1,128 @@
+
+/* adding style for full body */
+
+*{
+    margin:0;
+    padding:0;
+    font-family:'poppins', sans-serif;
+    box-sizing: border-box;
+}
+ /* adding style to the container class */
+.container{
+    width:100%;
+    min-height:100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding:10px;
+}
+
+/* adding style to the todo-app class */
+.todo-app{
+    width:100%;
+    max-width:540px;
+    background: #fff;
+    margin:100px  auto 20px;
+    padding: 40px 30px 70px;
+    border-radius:10px;
+}
+
+/*  adding style to the h2 tag in the todo-app  */
+.todo-app h2{
+    color: #002765;
+    display:flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* adding style to the img tag in the todo-app class  */
+.todo-app h2 img{
+     width:30px;
+     margin-left:10px;
+}
+  /*  adding style to the row class */
+.row{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius:30px;
+    padding-left:20px;
+    margin-bottom: 25px;
+}
+
+/* adding style to the input box/tag  */
+input{
+    flex:1;
+    border:none;
+    outline:none;
+    background:transparent;
+    padding:10px;
+}
+
+/* adding style to the button tag */
+button{
+    border:none;
+    outline:none;
+    padding:16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size:16px;
+    cursor:pointer;
+    border-radius: 40px;
+}
+
+/* adding style for ul and li tags  */
+  ul li{
+    list-style: none;
+    font-size:17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position:relative;
+  }
+
+   /* to add circle infront of (ul and li) or lists  */
+   ul li::before{
+    content:'';
+    position:absolute;
+    height: 24px;
+    width: 24px;
+    border-radius:50%;
+    background-image:url(unchecked.png);
+    background-size:cover;
+    background-position:center;
+    top: 10px;
+    left: 8px;
+   }
+
+   /* adding style to checked class in the ul li lists */
+
+   ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+   }
+
+   /* adding style infront of the checked class */
+
+   ul li.checked::before{
+    background-image:url(checked.png);
+   }
+   
+   /* To syle the span  */
+
+   ul li span{
+    position: absolute;
+    right:0;
+    top:5px;
+    width:40px;
+    height:40px;
+    font-size: 22px;
+    color:#555;
+    line-height:40px;
+    text-align: center;
+    border-radius: 50%;
+   }
+   /* to add the icons we using hover */
+
+   ul li span:hover{
+    background: #edeef0;
+   }
