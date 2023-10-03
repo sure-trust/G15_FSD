@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
     nameInput.addEventListener('input', function () {
         const nameValue = nameInput.value.trim();
         const nameRegex = /^[a-zA-Z ]{5,}$/;
-        if (nameValue.length >= 3) {
+        if (nameValue.length >= 5) {
             if (!nameRegex.test(nameValue)) {
                 nameInput.style.border = '2px solid red';
                 nameError.innerHTML = '<p style="color:red;"><i class="fas fa-exclamation-circle" style="color: red;"></i>Name should contain only alphabets</p>';
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 nameError.innerHTML = '<i class="fas fa-check-circle" style="color:green;"></i>';
             }
         } else {
-            nameError.innerHTML = '<p style="color:red;"><i class="fas fa-exclamation-circle" style="color: red;"></i>Length should be more than 3 characters.</p>';
+            nameError.innerHTML = '<p style="color:red;"><i class="fas fa-exclamation-circle" style="color: red;"></i>Length should be more than 5 characters.</p>';
         }
     });
     
