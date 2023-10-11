@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cookie Permission Check</title>
+</head>
+<body>
+  <h1>Cookie Permission Check</h1>
+  <p id="cookieStatus">Checking cookie permissions...</p>
+
+  <script>
+    // Function to check if cookies are enabled in the browser
+    function checkCookiePermission() {
+      // Try to set a test cookie
+      document.cookie = "testCookie=1";
+
+      // Check if the test cookie is present
+      var cookiesEnabled = document.cookie.indexOf("testCookie") !== -1;
+
+      // Clean up the test cookie
+      document.cookie = "testCookie=1; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+
+      // Display the result to the user
+      var statusElement = document.getElementById("cookieStatus");
+      if (cookiesEnabled) {
+        statusElement.textContent = "Cookies are enabled in your browser.";
+      } else {
+        statusElement.textContent = "Cookies are disabled in your browser. Please enable cookies to use this website.";
+      }
+    }
+
+    // Call the function to check for cookie permissions
+    checkCookiePermission();
+  </script>
+</body>
+</html>

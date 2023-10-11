@@ -1,0 +1,102 @@
+  body {
+    margin: auto;
+  }
+
+
+   h1{
+     text-align: center;
+     background-color: bisque;
+     width:1400px;
+     height: 70px;
+   }
+
+   .main-container{
+    margin: auto;
+    width: 1400px;
+   }
+   
+   .header{
+      background-color: tan;
+      text-align: center;
+      width: 1400px;
+      height:100px;
+    }
+
+  .main-body {
+    font-size: large;
+    width: 100%;
+    border: 0px solid #000;
+    overflow: hidden;
+
+  }
+
+  /*
+  .main-class {
+    border: 0px solid black;
+    padding:2px;
+    margin: 3px auto;
+    width: 1400px;
+    height: 697px;
+    
+  }*/
+  .menu {
+     border: 0px solid black;
+     background-color: aquamarine;
+     width: 100%;
+    } 
+        li{
+            display: inline-block;
+             padding: 25px 10px;
+          }
+
+  
+  .box-one {
+    border: 0px solid black;
+    background-color: blueviolet;
+    width: 74%;
+    float: left;  
+  }
+
+
+  .one-shade {
+    height: 200px;
+    border: 0px solid #73AD21;
+    background-color: #73AD21;
+    text-align: center;
+  }
+
+  .two-shade {
+    height: 200px;
+    border: 0px solid #73AD21;
+    background-color: #576249;
+    text-align: center;
+  }
+
+
+  .box-two {
+    border: 0px solid black;
+    background-color: blueviolet;
+    height: 400px;
+    width: 25%;
+    float: right;
+  
+  }
+
+  .summary-part {
+    border: 0px slid black;
+    background-color: rgb(157, 157, 157);
+    text-align: center;
+    width:100%;
+    height: 100px;
+    margin: 10px auto;
+    
+  }
+    
+
+  .footer{
+    text-align: center;
+    background-color: rgb(36, 171, 133);
+    border: 0px solid black;
+    height: 100px;
+    vertical-align: middle;
+  }
