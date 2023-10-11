@@ -1,0 +1,32 @@
+
+.navbar{
+    background-color: plum;
+ }
+ .navbar ul{
+     overflow: auto;
+ }
+ .navbar li{
+   float:left;
+   list-style:none;
+   margin:12px 15px;
+   
+      }
+      .navbar li a{
+        
+         text-decoration: none;
+      }
+      .para{
+        font-size: 20px;
+        width:60%;
+        border: 1px solid black;
+      }
+      .search{
+         float: right;
+         padding: 8px;
+         border-radius:20%;
+         margin:5px;
+      }
+      img{
+      border: 1px solid black;
+      margin: 5px auto;
+      }

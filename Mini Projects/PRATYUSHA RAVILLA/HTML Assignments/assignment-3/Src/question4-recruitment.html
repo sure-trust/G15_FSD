@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruitment Process</title>
+    <link rel="stylesheet" href="../Css/recruitment.css">
+</head>
+<body>
+    <h1>XYZ Company Recruitment Application</h1>
+  
+  <form action="submit.php" method="POST">
+    <div class="form-group">
+      <label for="first-name">first-name:</label>
+      <input type="text" id="first-name" name="first-name" required>
+    </div>
+    <div class="form-group">
+      <label for="last-name">last-name:</label>
+      <input type="text" id="last-name" name="last-name" required>
+   </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+    <div class="form-group"> 
+       <label for="Program attended">Program attended:</label>
+       <input type="checkbox" id="html" name="program attended" value="HTML" required>
+       <label for="html">HTML</label>
+       <input type="checkbox" id="java" name="program attended" value=" JAVA">
+       <label for="Java">JAVA</label>
+       <input type="checkbox" id="oracle" name="program attended" value="Oracle">
+       <label for="oracle">Oracle</label>
+    </div>
+    <div class="form-group">
+      <label for="Select the stream you belongs to">Select the stream you belongs to:</label>
+      <input type="radio" id="B-Tech" name="Select the stream you belongs to" value="B-Tech" required>
+      <label for="B-Tech">B-Tech</label>
+      <input type="radio" id="MCA" name="Select the stream you belongs to" value="MCA">
+      <label for="MCA">MCA</label>
+      <input type="radio" id="MBA" name="Select the stream you belongs to" value="MBA">
+      <label for="MBA">MBA</label>
+    </div>
+    <div class="form-group">
+      <label for="position">Position Applied For:</label>
+      <input type="text" id="position" name="position" required>
+    </div>
+    <div class="form-group">
+      <label for="resume">Resume:</label>
+      <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+    </div>
+    <div class="form-group">
+      <label for="cover-letter">Cover Letter:</label>
+      <textarea id="cover-letter" name="cover-letter" required></textarea>
+    </div>
+    <div class="form-group">
+      <input type="submit" value="Submit Application">
+    </div>
+  </form>
+</body>
+</html>

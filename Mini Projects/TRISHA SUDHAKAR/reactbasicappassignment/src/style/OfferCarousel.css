@@ -1,0 +1,33 @@
+/* OfferCarousel.css */
+.offer-slide {
+    position: relative;
+  }
+  
+  .offer-slide img {
+    width: 100%;
+    height: 500px;
+   
+  }
+  
+  .offer-details {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .offer-details h3 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .offer-details p {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+  
