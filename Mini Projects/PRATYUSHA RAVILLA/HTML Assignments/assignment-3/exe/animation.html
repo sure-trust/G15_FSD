@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Demo</title>
+    <style>
+        /*applying an animation*/
+        h1{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            animation-name: colorchanginganimation;
+            animation-duration: 3s;
+            animation-delay: 1s;
+            position: relative;
+            top: 300px;left: 300px;
+        
+
+        }
+        @keyframes colorchanginganimation {
+            
+            0%{
+                background-color: green;
+                width:100px;
+                top: 300px;left: 300px;
+            }
+            25%{
+
+                background-color: red;
+                width:300px;
+                bottom: 500px;right: 200px;
+            }
+
+            50%{
+
+                background-color: blue;
+                width:250px;
+                top: 200px;left: 200px;
+            }
+            75%{
+                background-color: yellow;
+                width:200px;
+                bottom: 200px;right: 300px;
+
+            }
+            100%{
+
+             background-color: green;
+             width:100px;
+              top: 500px; left: 200px;
+                }
+               }
+
+
+</style>
+</head>
+<body>
+<div>
+<h1>Hello world!!</h1>
+</div>
+</body>
+</html>
