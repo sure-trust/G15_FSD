@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact Us - Responsive Page Design</title>
+    <link rel="shortcut icon" type="image/jpg" href="../pictures/news2.png"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+    </style>
+    <link rel="stylesheet" href="./contact.css">
+    </head>
+    <body>
+        <section>
+            <div class="container">
+                <div class="contactInfo"> 
+                    <div>
+                        <h2>Contact Info</h2>
+                        <ul class="info">
+                            <li>
+                                <span><img src="data:image/png;base64,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"></span>
+                                <span>184 Ippokratous Street<br>
+                                    Athens, Gr<br>
+                                    11472</span>
+                                </span>
+                            </li>
+                            <li>
+                                <span><img src="data:image/jpeg;base64,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"></span>
+                                <!-- <span>nassosanagn@gmail.com</span> -->
+                                <span><a href = "mailto: nassosanagn@gmail.com">nassosanagn@gmail.com</a></span>
+                            </li>
+                            <li>
+                                <span><img src="data:image/jpeg;base64,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"></span>
+                                <span>702-279-3488</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <ul class="sci">
+                        <li><a href="https://www.facebook.com/nassosanagn/"><img src="../pictures/1.png"></a></li>
+                        <li><a href="https://www.instagram.com/nassosanagn_/?hl=el"><img src="../pictures/3.png"></a></li>
+                        <li><a href="https://twitter.com/nassosanagn"><img src="../pictures/2.png"></a></li>
+                        <li><a href="https://www.linkedin.com/in/nassos-anagnostopoulos-2b9631196/"><img src="../pictures/5.png"></a></li>
+                        
+                    </ul>
+                </div>
+                    <div class="contactForm">
+                        <h2>Send a Message</h2>
+                        <div class="formBox">
+                        <div class="inputBox w50">
+                            <input type="text" name="" required>
+                            <span>First Name</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="text" required>
+                            <span>Last Name</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="email" required>
+                            <span>Email Address</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="text" required>
+                            <span>Mobile Number</span>
+                        </div>
+                        <div class="inputBox w100">
+                            <textarea required></textarea>
+                            <span>Write your message here...</span>
+                        </div>
+                        <div class="inputBox w100">
+                            <input type="submit" value="Send">
+                        </div>
+                    </div>
+                </div>
+                    
+                    
+             
+        </section>
+    </body>
+</html>
