@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parentElement">
+        <p id="referenceElement">Existing paragraph</p>
+      </div>
+      
+      <script>
+        var parent = document.getElementById("parentElement");
+        var referenceElement = document.getElementById("referenceElement");
+        var newElement = document.createElement("p");
+        var text = document.createTextNode("New paragraph");
+        newElement.appendChild(text);
+        parent.insertBefore(newElement, referenceElement);
+      </script>
+</body>
+</html>

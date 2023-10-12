@@ -1,0 +1,35 @@
+.container {
+    height:900px;
+    border:2px solid lightblue;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color:  rgb(243, 38, 38);
+    align-items: center;
+    justify-content: space-around;
+   
+ }
+ .item {
+     background-color: rgb(2, 2, 2);
+     border: 2px solid black;
+     height:100px;
+     width: 200px;
+     margin: 2px;
+     text-align: center;
+     padding-top: 10%;
+     color:azure;
+    
+ }
+
+    @media (min-width:300px) and (max-width:700px){
+    .container{
+
+        display:block;
+        background-color: aqua;
+    }}
+    @media (min-width:800px) {
+        .container{
+
+            display:block;
+            background-color: rgb(235, 214, 20);
+        }}
