@@ -1,0 +1,122 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+  
+  h2 {
+    text-align: center;
+    padding: 20px;
+    color: #337ab7;
+  }
+  
+  form {
+
+    margin: 3px auto;
+    padding: 22px;
+    background-color: #fff;
+    border: 2px solid #9a9696;
+    border-radius: 5px;
+
+  }
+  
+  .form-group {
+    margin-bottom: 19.5px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    }
+  
+     input[type="text"],
+     input[type="email"],
+     input[type="tel"],
+     input[type="Subject"],
+     input[type="Message"],
+     textarea {
+      width: 95%;
+      padding: 10px;
+      border: 1px solid #625e5e;
+      border-radius: 5px;
+    }
+  
+    input[type="file"]
+    {
+     margin-top: 5px;
+    }
+  
+    input[type="submit"] 
+   {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+   }
+  
+   input[type="submit"]:hover 
+   {
+    background-color: #286090;
+    
+   }
+  
+  /*
+  .main-class{
+    display: inline-block;
+    width: 700px;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid rgb(238, 93, 93);
+   }/*
+
+/* this is for div side by side */
+   .parent {
+    display: inline-block;
+    width: 1100px;
+    border: 1px solid black;
+    margin: 3px auto;
+    text-align: center;
+    vertical-align: auto;
+    height:555px;
+  }
+  .child 
+  {
+    display: inline-block;
+    text-align:center;
+    text-transform: capitalize;
+
+  
+  } 
+
+  #one{
+    background-image:url(../img/background.jpg);
+    height: 555px;
+    width:530px;
+    display:flexbox;
+    float: left;
+  }
+  #two
+  {
+    display:inline-block;
+    width:570px;
+    height: 755px;
+    text-align: left;
+  }
+  pre{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 
+    'Arial Narrow', Arial, sans-serif;
+  }
+
+h1{
+  text-align: center;
+  float: right;
+}
+
+   
+   
+  

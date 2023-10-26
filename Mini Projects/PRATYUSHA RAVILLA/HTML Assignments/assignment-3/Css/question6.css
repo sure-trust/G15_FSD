@@ -1,0 +1,81 @@
+header{
+    text-align: center;
+    width: 700px;
+    font-size: 17px;
+}
+/* aside{
+    font-size: 20px;
+    border: 2px solid black;
+    
+} */
+/* div{
+   font-size: 20px;
+  border:2px solid black;
+} */
+
+
+ .float-container {
+    border: 3px solid black;
+    padding: 20px;
+    float: right;
+    
+ }
+  /*
+ .float-child {
+    width: 50%;
+    float: right;
+    padding: 20px;
+    border: 2px solid red;
+ }*/
+
+    .main-header {
+       border: 1px solid plum;
+       font-size: 20px;
+       width: 700px; 
+       margin: 0px auto; 
+       padding:0px;
+      
+ }
+  *{
+    box-sizing: border-box;
+  }
+
+ .column{
+   float: left;
+      width: 37.44%;
+   }
+
+  
+  /* Clearfix (clear floats) */
+
+   /*.row::after {
+       clear: both;
+       display: table;/*
+       
+  } /*
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+   }*/
+
+   .row{
+      margin: 0px;
+      padding-left: 55px;
+      height:400px;
+      background-color:rgb(187, 219, 250);
+   }
+   h1{
+      text-align:center;
+      background-color: beige;
+   }
+    .two{
+      background-image:url(../img/gymnastics-nawpic.webp);
+      height: 600px;
+      
+
+    }
+   
+
+  
+
