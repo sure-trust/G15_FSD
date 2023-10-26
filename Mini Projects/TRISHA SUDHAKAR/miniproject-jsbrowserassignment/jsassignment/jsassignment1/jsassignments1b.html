@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number Game</title>
+</head>
+<body>
+    <h1>Guess the Number Game</h1>
+    <p>Try to guess the number between 1 and 10:</p>
+    
+    <input type="text" id="userGuess" placeholder="Enter your guess">
+    <button id="submitGuess">Submit Guess</button>
+    <p id="message"></p>
+    
+    <script>
+        const random = Math.floor(Math.random() * 10) + 1;
+        let attempts = 0;
+
+        const userGuessInput = document.getElementById("userGuess");
+        const submitGuessButton = document.getElementById("submitGuess");
+        const messageDisplay = document.getElementById("message");
+
+        submitGuessButton.addEventListener("click", checkGuess);
+
+        function checkGuess() {
+            const userGuess = parseInt(userGuessInput.value);
+
+            if (isNaN(userGuess) || userGuess < 1 || userGuess > 10) {
+                messageDisplay.textContent = "Please enter a valid number between 1 and 10.";
+            } else {
+                attempts++;
+
+                if (userGuess === random) {
+                    messageDisplay.textContent = `Congratulations! You guessed the correct number (${random}) in ${attempts} attempts.`;
+                    submitGuessButton.disabled = true;
+                } else if (userGuess < random) {
+                    messageDisplay.textContent = "Try a higher number.";
+                } else {
+                    messageDisplay.textContent = "Try a lower number.";
+                }
+            }
+
+            userGuessInput.value = "";
+        }
+    </script>
+</body>
+</html>
+

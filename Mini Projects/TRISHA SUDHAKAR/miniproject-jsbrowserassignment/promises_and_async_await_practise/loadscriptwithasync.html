@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Load Script with Async/Await</title>
+</head>
+<body>
+    <div id="result"></div>
+
+    <script>
+        function loadScript(url) {
+            return new Promise((resolve, reject) => {
+                const script = document.createElement('script');
+                script.src = url;
+                script.onload = resolve;
+                script.onerror = reject;
+                document.head.appendChild(script);
+            });
+        }
+
+        async function loadAndDisplayScript() {
+            const scriptUrl = 'path_to_your_script.js';
+            try {
+                await loadScript(scriptUrl);
+                // Script loaded successfully
+                document.getElementById('result').innerHTML = 'Script loaded successfully!';
+            } catch (error) {
+                // Error occurred while loading the script
+                document.getElementById('result').innerHTML = 'Error loading the script!';
+            }
+        }
+
+        loadAndDisplayScript();
+    </script>
+</body>
+</html>
