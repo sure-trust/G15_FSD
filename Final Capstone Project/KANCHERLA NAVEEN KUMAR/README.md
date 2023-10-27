@@ -1,1 +1,2 @@
-# G1_DSA_CPlusPlus
+# SURETRUST_FINAL_PROJECT
+ except nodemodules all my stuff is pushed
