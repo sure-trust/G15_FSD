@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../todoappassignment/demotodo.css">
+    <title>Todo App</title>
+</head>
+<body>
+    <header>
+        <h1>Todo App</h1>
+    </header>
+    <form id="todo-form">
+        <input type="text" id="todo" placeholder="Enter Todo">
+        <input type="text" id="category" placeholder="Enter Category">
+        <!-- Add separate input fields for date and time -->
+        <input type="date" id="date" placeholder="Select Date">
+        <input type="time" id="time" placeholder="Select Time">
+  
+        <button type="submit">Add Todo</button>
+    </form>
+    <div id="error-msg"></div>
+
+    <div class="filter-todos">
+        <label for="filter-category">Filter by Category:</label>
+        <select id="filter-category">
+            <option value="all">All</option>
+        </select>
+    </div>
+    <div class="completed-todos">
+        <h2>Completed Todos</h2>
+        <div id="completed-todo-list"></div>
+    </div>
+
+    <div class="uncompleted-todos">
+        <h2>Uncompleted Todos</h2>
+        <div id="uncompleted-todo-list"></div>
+    </div>
+    <div id="todo-list"></div>
+
+
+      <script src="../todoappassignment/demo.js"></script>
+     
+</body>
+</html>
