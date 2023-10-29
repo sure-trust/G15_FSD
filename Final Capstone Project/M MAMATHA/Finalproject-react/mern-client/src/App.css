@@ -1,0 +1,47 @@
+.red{
+    font-size: 40px;
+    font-weight: 600;
+    text-emphasis-color: black;
+    
+
+}
+.logo{
+    font-size: 30px;
+}
+.best{
+    font-size: 30px;
+}
+.favbook{
+    font-size: 30px;
+}
+header,nav{
+    z-index: 100001  !important;
+}
+.review{
+    box-shadow: 3px 3px 4px ;
+
+}
+.search{
+    background-color: black;
+}
+.cartlogo{
+    right:-40px;
+    top: -15px;
+   
+    
+}
+.cart{
+    flex-wrap: wrap;
+    font-size: 20px;
+    line-height: 1.2rem;
+    top: 100px;
+    
+}
+.about{
+    width: 400px;
+    height: auto;
+}
+.about1{
+    top: -20px;
+    
+}
