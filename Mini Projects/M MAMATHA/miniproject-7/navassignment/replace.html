@@ -1,0 +1,12 @@
+<div id="myDiv">
+    <p id="oldParagraph">Existing paragraph</p>
+  </div>
+  
+  <script>
+    var oldParagraph = document.getElementById("oldParagraph");
+    var newParagraph = document.createElement("p");
+    var text = document.createTextNode("New paragraph");
+    newParagraph.appendChild(text);
+    oldParagraph.replaceWith(newParagraph);
+  </script>
+  
