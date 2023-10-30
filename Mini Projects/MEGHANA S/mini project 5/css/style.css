@@ -1,0 +1,32 @@
+div {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    float: left;
+    text-align: center;
+}
+
+.div1{
+    background-color: violet;
+}
+.div2{
+    background-color: indigo;
+}
+.div3 {
+    background-color: blue;
+}
+.div4 {
+    background-color: green;
+}
+.div5 {
+    background-color: yellow;
+}
+.div6{
+    background-color: orange;
+}
+.div7 {
+    background-color: red;
+}
+.one{
+
+}
