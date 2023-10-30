@@ -23,7 +23,7 @@ Below is a table summarizing the mini projects and final project completed durin
 
 | Description                               | Link                                    |
 |-------------------------------------------|-----------------------------------------|
-| Mini Projects: [Mini Projects using HTML,CSS,BOOTSTRAP,JAVASCRIPT,REACTJS]     |(Click Here) [https://github.com/sure-trust/G15_FSD/tree/main/Mini%20Projects/M%20MAMATHA]                         |
-| Mini Projects: [Mini Project CHAT-BOT using HTML,CSS,BOOTSTRAP,JAVASCRIPT]     |(Click Here) [https://github.com/sure-trust/G15_FSD/tree/main/Mini%20Projects/M%20MAMATHA/chat%20Bot]                         |
-| Final Project: [ Authentication:Implement Firebase,and Google OAuth for secure and seamless user access. Real-world CRUD Operations: Create, Edit, Update, and Delete Books using MongoDB.The user can esaily Search the Book and Add to their Carts. ]        |(Click Here) [https://github.com/sure-trust/G15_FSD/tree/main/Final%20Capstone%20Project/M%20MAMATHA]                         |
+| Mini Projects: [Mini Projects using HTML,CSS,BOOTSTRAP,JAVASCRIPT,REACTJS]     |(Click Here)[https://github.com/sure-trust/G15_FSD/tree/main/Mini%20Projects/M%20MAMATHA]                         |
+| Mini Projects: [Mini Project CHAT-BOT using HTML,CSS,BOOTSTRAP,JAVASCRIPT]     |(Click Here)[https://github.com/sure-trust/G15_FSD/tree/main/Mini%20Projects/M%20MAMATHA/chat%20Bot]                         |
+| Final Project: [ Authentication:Implement Firebase,and Google OAuth for secure and seamless user access. Real-world CRUD Operations: Create, Edit, Update, and Delete Books using MongoDB.The user can esaily Search the Book and Add to their Carts. ]        |(Click Here)[https://github.com/sure-trust/G15_FSD/tree/main/Final%20Capstone%20Project/M%20MAMATHA]                         |
 
