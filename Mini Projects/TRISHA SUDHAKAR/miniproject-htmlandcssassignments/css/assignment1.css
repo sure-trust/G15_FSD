@@ -1,0 +1,80 @@
+/* changing background color of body  */
+body{
+
+    background-color: #cccccc;
+    background-image: url(../pictures/light.jpg);
+    
+    background-position: center;
+    background-size: cover;
+
+
+}
+#div1
+{
+    background-color: rgb(234, 235, 225);
+    background-image: url(../pictures/light.jpg);
+    border-style:double;
+    border-width: 50px;
+    border-color: rgb(0, 0, 0);
+    border-width: 1px;
+    text-align: left;
+    border-bottom:1px dashed rgb(5, 5, 5);
+    margin-bottom: 10px;
+    font-size: medium;
+    font-style:normal;
+    padding:30px;
+    margin:20px;
+   
+}
+
+/* changing the color and font-size   */
+#div2{
+
+    color: rgb(7, 7, 7);
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color:lightblue
+    
+
+
+}
+p{
+
+    border:1px solid rgb(11, 12, 11);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+ 
+ }
+ 
+ 
+span{
+
+    background-color: rgb(236, 241, 187);
+    color:rgb(7, 5, 5);
+}
+/*psudeo classes are not created by you*/
+a:link{
+    color:black;
+}
+
+a:visited{
+    color:red;
+}
+
+a:hover{
+    background-color: yellow;
+
+}
+
+a:active{
+    color:blue;
+}
+
+a:focus{
+    color:orange;
+}
+/*  those anchor elements which will have class attribute  */
+.activity{
+
+   background-color: darkgrey;
+}

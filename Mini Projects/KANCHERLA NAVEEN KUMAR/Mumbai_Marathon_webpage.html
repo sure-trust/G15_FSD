@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gray;
+  font-family: Verdana;
+}
+
+.header {
+  background-color: orange;
+  color: white;
+  padding: 1px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.footer {
+  background-color: orange;
+  color: white;
+  padding: 0.5px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.links {
+  float: left;
+  width: 25%;
+}
+
+.links a{
+border-bottom:3px solid white;
+display:block;
+}
+
+.form {
+  background-color:white;
+  border-radius:15px;
+  border:5px solid white;
+  display: inline-block;
+  width: 50%;
+  padding: 20px;
+  text-align:left;
+  font-size:13px;
+}
+
+.sponsors {
+  float: right;
+  width: 25%;
+  text-align: center;
+  font-size:13px;
+}
+
+.links a {
+  color: orange;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.form textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Mumbai Marathon 2022</h1>
+</div>
+<br>
+<div class="flex-container">
+
+<div class="links">
+  <h3 align="center" style="color:orange"">Links</h3>
+  <a href="https://yogivemanauniv.in/ap-govt-schemes/">Home</a><br>
+  <a href="https://www.runners.quest/tata-mumbai-marathon/">Sign Up</a><br>
+  <a href="https://yogivemanauniv.in/about-us/">About the Race</a>
+</div> 
+
+<div class="form">
+  <h2 align="center" style="color:orange">Sign Up Today</h2>
+  <form method="post">
+  <p><b>Race fee:</b> 1000 INR</p>
+  <p>Make check payable to the Happy Marathon Club</p>
+  <p><strong>Note:</strong> We recommend that you seek your doctor's and family's approval before you sign up. Race fees are not refundable.</p>
+    
+    Runner:<input type="text" id="runner" name="runner" placeholder="First and last name" maxlength="10" required><br>
+<br>
+Tel#: <input type="tel" id="tel" name="tel" placeholder="(xxx)-xxx-xxxx" pattern="[0-9]{2}-[0-9]{4}" required><br><br>
+
+    Email:<input type="email" id="email" name="email" placeholder="For confirmation only" required><br><br>
+
+Date of Birth:<input type="date" id="dob" name="dob" required><br><br>
+
+    <fieldset style="text-align:left" >
+      <legend>T-shirt Size:</legend>
+     Small <input type="radio" id="small" name="tshirt-size" value="small"><br><br>
+     
+    Medium <input type="radio" id="medium" name="tshirt-size" value="medium"><br><br>
+     
+     Large <input type="radio" id="large" name="tshirt-size" value="large"><br><br>
+      
+        
+    Shirt style <select id="shirt-style" name="shirt-style">
+      <option value="White">White</option>
+      <option value="Gray">Gray</option>
+      <option value="Navy">Navy</option>
+    </select>
+    </fieldset>
+    <fieldset>
+      <legend>Expectations:</legend>
+      
+      Confidence: <input type="range" id="confidence" name="confidence" min="0" max="100" step="5" required><br>
+      Note:<textarea id="notes" name="notes" maxlength="140"></textarea>
+    </fieldset>
+
+    <br>
+
+    <input type="submit" value="Register">
+  </form>
+</div>
+
+<div class="sponsors">
+  <h3 style="color:orange">Sponsors</h3>
+  <h4>Happy Marathon Club</h4>
+  <img src="image.jpeg"  height="350" width="300px" alt="&copy;Image is  missing"></img>
+</div>
+
+</div>
+<br>
+<div class="footer">
+  <p>Powered by MM2022</p>
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,42 @@
+Every programming language has its own syntax and set of rules to be followed while writing programs
+
+What is a variable ?
+A container for storing values
+It can be primitive :
+: number
+string
+boolean
+null
+undefined
+Symbol
+bigint
+
+or an Object
+========
+eg :
+const person = { 
+    id:111,
+    name:'deepali'
+}
+
+
+
+Always follow the naming conventions :
+letters digits and underscore and $ dollar sign allowed
+must begin with a letter or $ symbol or underscore
+should not be a keyword
+case sensitive
+
+
+
+use let instead of var to declare variables
+var is globally scoped while let is block scoped
+
+var can be redeclared and  updated in its scope
+let can be updated not redeclared
+
+const can neither be updated nor re-declared
+
+
+
+
