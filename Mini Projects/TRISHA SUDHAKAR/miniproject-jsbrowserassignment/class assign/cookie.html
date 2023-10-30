@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cookie Demo</title>
+</head>
+<body>
+  <h1>Cookie Demo</h1>
+  <button onclick="setCookie()">Set Cookie</button>
+  <button onclick="getCookie()">Get Cookie</button>
+  <button onclick="deleteCookie()">Delete Cookie</button>
+
+  <script>
+    function setCookie() {
+      const cookieName = 'demoCookie';
+      const cookieValue = 'Hello, this is a cookie!';
+      const expirationDays = 7; // Number of days the cookie will be valid
+
+      const date = new Date();
+      date.setTime(date.getTime() + (expirationDays * 24 * 60 * 60 * 1000));
+      const expires = "expires=" + date.toUTCString();
+
+      document.cookie = `${cookieName}=${encodeURIComponent(cookieValue)};${expires};path=/`;
+
+      alert("Cookie set successfully!");
+    }
+
+    function getCookie() {
+      const cookieName = 'demoCookie';
+      const cookies = document.cookie.split(';');
+
+      for (const cookie of cookies) {
+        const [name, value] = cookie.split('=');
+        const trimmedName = name.trim();
+        if (trimmedName === cookieName) {
+          const decodedValue = decodeURIComponent(value);
+          alert("Cookie value: " + decodedValue);
+          return;
+        }
+      }
+
+      alert("Cookie not found!");
+    }
+
+    function deleteCookie() {
+      const cookieName = 'demoCookie';
+      const date = new Date();
+      date.setTime(date.getTime() - 1);
+      const expires = "expires=" + date.toUTCString();
+
+      document.cookie = `${cookieName}=;${expires};path=/`;
+
+      alert("Cookie deleted successfully!");
+    }
+  </script>
+</body>
+</html>

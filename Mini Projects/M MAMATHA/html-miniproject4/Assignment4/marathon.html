@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Documeny</title>
+<link rel="stylesheet" href="./marathon.css">
+</head>
+<body>
+
+<div class="main">
+    <header id="header">Mumbai Marathon 2002</header>
+    <div id="three">
+        <div id="nav">
+            <div id="align">
+                <p>Links</p>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">About the Race</a></li>  
+                </ul>
+            </nav>
+        </div>
+        <div id="form">
+            <h1>Sign up Form</h1>
+            <div id="p1"><p id="para1"><strong class="note">Race Fee:</strong>  1000 INR</p></div>
+            <div id="p2"><p id="para2"> Make check payable to the Happy Marathon Club</p></div>
+            <div id="p3"><p id="para3"><strong class="note">Note: </strong> We recommend that you seek your Doctor's and Family's approval before you sign up.Race fees are not refundable. </p></div>
+            <form action="submit.php" method="POST">
+                <div id="one">
+                    <div class="form-group">
+                        <label for="runner">Runner:</label>
+                        <input type="text" id="runner" name="runner" placeholder="First and last name" maxlength="10" height="10" required>
+                    </div>
+                    <div class="form1">
+                        <label for="tel">Tel: </label>
+                        <input type="tel" id="tel" name="tel" placeholder=" (xxx-xxx-xxxx)" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    </div>
+                    <div class="form1">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter email" required>
+                    </div>
+                    <div class="form1">
+                        <label for="dob">DOB:</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                </div>
+                <div>
+                    <fieldset id="fieldset">
+                        <legend>T-Shirt Size:</legend>
+                        <label for="size-s">Small</label>
+                        <input type="radio" id="size-s" name="tshirt-size" value="S" required>
+                        <label for="size-m">Medium</label>
+                        <input type="radio" id="size-m" name="tshirt-size" value="M">
+                        <label for="size-l">Large</label>
+                        <input type="radio" id="size-l" name="tshirt-size" value="L">
+                        <label for="shirt-style">Shirt Style:</label>
+                        <select id="shirt-style" name="shirt-style">
+                            <option value="White">White</option>
+                            <option value="Gray">Gray</option>
+                            <option value="Navy">Navy</option>
+                        </select>
+                    </fieldset>
+                </div>
+                <div class="Expectation">
+                    <fieldset>
+                        <legend>Expectation:</legend>
+                        <label for="confidence">Confidence:</label>
+                        <input type="range" id="confidence" name="confidence" (min="0" max="100%" step="5")>
+                        <span id="confidence-value">0%</span><br>
+                        <label for="notes">Notes:</label>
+                        <textarea id="notes" name="notes" placeholder="" maxlength="140"></textarea>
+                </fieldset>
+                </div>
+                
+                    
+                
+                <div class="form">
+                    <input type="submit" value="Register">
+                    
+                </div>
+            </form>
+        </div>
+        <div id="section">
+            <p id="sectionp">Sponsors</p><br>
+            <p>Happy Marathon Club</p>   
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-JTZsbsp3DTC2ij4XFOtxfbJVCBIHbRWCvNStSsfM&s" alt="none"> 
+        </div>
+    </div>
+    <div id="footer">
+        <p>Powered By MM2</p>      
+    </div>
+</div>
+</body>
+</html>

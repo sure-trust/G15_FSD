@@ -19,11 +19,25 @@ SURE Trust is a registered NGO committed to eradicating the disparity between sk
 
 To enroll in the FSD course, please visit the official SURE Trust website: [Course Registration](https://suretrustforruralyouth.com/courses/37)
 
+|Students Name|Link|
+|-------------|----|
+|Edagottu Chandana|[click here](link)|
+|Hema Sathwika|[click here](link)|
+|Kancherla Naveen Kumar|[click here](link)|
+|kanchi Haribabu|[click here](link)|
+|M Mamatha|[click here](link)|
+|Meghana S|[click here](link)|
+|Nithish Varma|[click here](link)|
+|Pratyusha Ravilla|[click here](link)|
+|S Kavitha|[click here](link)|
+|Shamanth Giddaluru|[click here](link)|
+|Trisha Sudhakar|[click here](link)|
+
+
 ## Repository Description
 
 This repository is designed to support the G15 FSD training program at SURE Trust. It follows the below mentioned organization structure:
 
-- **Notes**: An archive of  notes and course materials provided by our trainer - Muskaan Maam.
 - **Mini Projects**: A repository holding code files of the mini projects undertaken during the course.
 - **Final Project**: A comprehensive compilation of code files and resources of the final projects.
 - **Course Reports**: A repository containing course reports authored by students, documenting their individual progress and experiential insights.

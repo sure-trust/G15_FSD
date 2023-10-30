@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Local and Session Storage Example</title>
+</head>
+<body>
+  <h1>Local and Session Storage Example</h1>
+
+  <label for="data">Enter data:</label>
+  <input type="text" id="data" />
+  <button onclick="saveDataToLocal()">Save to Local Storage</button>
+  <button onclick="saveDataToSession()">Save to Session Storage</button>
+
+  <h2>Stored Data</h2>
+  <div id="storedData">
+    <p>Local Storage:</p>
+    <pre id="localData">No data stored in Local Storage.</pre>
+    <p>Session Storage:</p>
+    <pre id="sessionData">No data stored in Session Storage.</pre>
+  </div>
+
+  <script src="Local-Session.js"></script>
+</body>
+</html>

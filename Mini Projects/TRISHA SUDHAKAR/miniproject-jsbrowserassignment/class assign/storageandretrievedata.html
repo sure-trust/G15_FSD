@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Local Storage Demo</title>
+</head>
+<body>
+    <h1>Local Storage Demo</h1>
+    <input type="text" id="dataInput" placeholder="Enter data">
+    <button onclick="saveData()">Save Data</button>
+    <button onclick="retrieveData()">Retrieve Data</button>
+    <p id="result"></p>
+
+    <script>
+        function saveData() {
+            const data = document.getElementById("dataInput").value;
+
+            // Check if local storage is available in the browser
+            if (typeof(Storage) !== "undefined") {
+                localStorage.setItem("savedData", data);
+                alert("Data saved to local storage.");
+            } else {
+                alert("Local storage is not supported by this browser.");
+            }
+        }
+
+        function retrieveData() {
+            // Check if local storage is available in the browser
+            if (typeof(Storage) !== "undefined") {
+                const savedData = localStorage.getItem("savedData");
+                if (savedData) {
+                    const resultElement = document.getElementById("result");
+                    resultElement.innerHTML = `Retrieved Data: ${savedData}`;
+                } else {
+                    alert("No data found in local storage.");
+                }
+            } else {
+                alert("Local storage is not supported by this browser.");
+            }
+        }
+    </script>
+</body>
+</html>
