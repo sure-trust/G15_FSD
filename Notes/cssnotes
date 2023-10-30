@@ -1,0 +1,609 @@
+History
+CSS was created by Håkon Wium Lie to allow web designers to change their website's layout, colours, and fonts. Originally, websites were meant to be used by researchers only, so the decoration did not matter. However, the need to make them look nice grew when websites became widespread.
+
+ 
+
+Why the word “Cascade”?
+The Cascade determines which CSS rules will be applied when multiple rules for an item are contradicting in the style sheet. 
+
+ 
+
+Key features of CSS
+Used to style and layout webpages
+Written in HTML and XML
+The last version was CSS 2.1, but seeing the scope everything now comes under the umbrella of CSS without any version number.
+Reusability of the same rules for multiple HTML documents.
+ 
+
+Why learn CSS?
+CSS though optional, adds beauty to a website. It helps the user to design a majestic website according to their own liking.
+
+write html in body tag and then apply style :
+internal or external style or inline 
+
+try out all 3 styles mentioned above:
+
+ <style>
+    body {
+        color: yellow;
+        background-color: rebeccapurple;
+    }
+</style>
+
+
+How CSS works ?
+Just like painting , it takes some steps to  create art piece and ,similarly, when our website is loaded in the browser it creates a structure to manage the execution of different tags of HTML.
+
+Using DOM, HTML, as well as CSS of the web page, can be accessed along with the behaviour of the HTML elements. So, Document Object Model  interacts with HTML documents.
+
+ 
+
+Working of CSS
+Once the DOM model is created in HTML, the browser parses CSS to the selectors we used as mentioned below :
+
+CSS Selectors:
+
+1. Element selectors
+    eg h,p
+ <style>
+    h1 {
+        color: green;
+        background-color: aquamarine;
+    }
+     p {
+        color: aquamarine;
+        background-color: green;
+    }
+</style>
+
+2.CSS ID selectors
+suppose you have an id "para" to style it
+
+ <style>
+    #para {
+        color: green;
+        background-color: aquamarine;
+    }
+</style>
+
+3. CSS class selector
+
+ <style>
+    .even {
+        color: green;
+        background-color: aquamarine;
+    }
+    
+    .odd {
+        color: black;
+        background-color: pink;
+    }
+</style>
+
+4.CSS Universal selector : applies to everything on a page
+
+*{
+  
+  font-size:1em;
+  padding:0px;
+  margin:0px;
+
+}
+
+
+5.Group selector
+<style>
+    h1, h3 {
+        color: brown;
+        background-color: yellowgreen;
+    }
+   
+    h2, h4 {
+        color: yellowgreen;
+        background-color: brown;
+    }
+</style>
+
+and many more , refer W3 schools 
+
+You have also learnt about CSS comments
+/*  */
+
+
+CSS colors
+rgb
+rgba
+hsl
+hsla
+hexadecimal values
+named colors
+
+
+
+
+CSS backgrounds :
+    background-color
+    background-image
+    background-size
+    background-repeat
+
+
+CSS borders :
+
+try shorthand property
+and also individual for top left bottom right 
+with diff styles and colors and sizes
+
+
+work with Images using CSS 
+like border-radius
+height
+width
+opacity
+max-height
+max-width
+filter
+
+
+
+Try out html tag of video
+using controls
+give it some width and height in css
+and some background
+
+CSS Fonts :
+
+    fontcolor
+    size
+    family
+    ems vs rems
+    style
+    weight
+
+
+
+CSS Text :
+    text-decoration
+    text-align
+    text-transform
+    letter-spacing
+    text-indent
+    line-height
+    text-shadow
+
+
+
+
+
+CSS Padding:
+
+    shorthand of padding
+    and also individually for : top left bottom right
+
+CSS Margin :
+
+In margin property unlike padding, the background of the text is also included while adding the space between content and element.        
+
+
+
+CSS Hover
+    work with a:hover, p:hover, or h1:hover
+    and apply some style 
+
+
+CSS Cursor:
+apply diff types of cursors
+like pointer , auto,crosshair , resize 
+refer w3 schools for all styles of cursor
+
+
+
+CSS Links :
+hover , visited ,focus ,active 
+
+
+CSS Combinators : examples
+
+    div p -- all ps in divs
+
+    div>p  --first generation descendants of specified elements, in this case , first generation of p in div
+
+
+
+Adjacent Sibling Selector  ---eg: div+p
+As the name suggests this selector only selects the adjacent element to the specified element. 
+
+<p> tag right after <div> ends, would be selected
+
+
+General Sibling Selector:
+Unlike the adjacent selector, this one going to select all the <p> tags present after <div>.
+
+eg div~p
+
+
+
+CSS Buttons
+
+create 4 buttons :(assignment) :
+1 with default button
+1 with shadow on button
+1 with border on button
+1 with link button
+
+html will look something like this :
+
+
+<body>
+<h1 style='color:blue'>CSS Buttons</h1>
+<button>Default Button</button>
+<a href='#' class='button1'>Link Button</a>
+<button class='button2'>Shadow </button>
+<button class='button3'>Border </button>
+
+</body>
+
+
+
+
+
+
+
+CSS Overflow
+Sometimes the content shown is too large to be visible in a single line or division of the website. So, to avoid loss of that information we can use overflow property.
+
+ 
+
+Overflow Visible
+This makes the whole text visible irrespective of the container size.
+
+
+CSS Float
+float property allows the balance between text and the image shown beside it. 
+
+CSS Maths Functions
+Maths functions helps us in fighting dimensions of elements or screen autonomously and thus helps in the responsiveness of a website.
+
+ 
+
+Calc() Function:
+
+width:calc(100%-20px)
+Calculates the value , in this example it will calculate  width of a particular property.
+ It will automatically subtract 20px from whatever is the 100% width of that container on the website. This way you can space your elements well without hassles.It 
+
+Max & Min Functions
+This function takes two parameters and gives the result out of one accordingly.
+
+Eg:
+
+width: max(50px, 50%);
+ 
+
+Out of these two whichever would be greater, would be assigned as a value to the width; vice versa happens for the minimum function.
+
+ CSS Size
+We’ve seen various units in CSS so far used for many different purposes; we did hit and trial to find the correct dimensions of that unit for our website. 
+
+ 
+
+
+CSS Units:
+
+ 
+
+Absolute Units.
+cm - centimetres (1 cm = 37.8 px)
+mm - millimetres
+in - inches (1 in = 96 px = 2.54cm)
+pt - points (1pt = 1/72th of 1 in)
+pc - picas (1pc = 1/6th of 1 in)
+px - pixel (1px = 1/96th of 1 in)
+Generally we only use pixels to set dimensions of an element.
+
+ 
+
+Relative Units
+em - Relative to the font size of the parent element. Eg: 5em means the size would be 5 times the current font size.
+ex - Relative to X height of the existing font
+ch - Relative to the width/ radius of the character “0”.
+rem - Relative to the font size of the root element.
+vw - Relative to 1% of the width of the viewport. (Viewport is the area of the website visible to the user.)
+vh -  Relative to 1% of the height of the viewport
+% - Relative to the parent element’s size.
+ 
+
+Other metrics:
+
+Opacity: Ranges from 0 to 1
+RGB & RGBA values: 0 to 255
+HSL & HSLA values: 0 to 360
+ 
+
+
+CSS Positioning:
+
+This CSS property states the type of positioning an element of CSS is taking. Let’s look at a few ways to set the values for the same.
+
+ 
+
+Static Position
+This is the default state of any element in CSS. Properties such as top, left, right and bottom are not applicable on a static element.
+
+ 
+Relative Positioning
+This property allows the use of the restricted properties that static couldn’t, and sets the position of the element flexible and relative to its normal position.
+
+ Fixed Position
+This property fixes the element on the screen even if the website scrolls down. Also, the position of the element changes from relative to absolute. 
+
+Absolute Positioning
+This property would give the same output as fixed but will allow scrolling of the element. A noteworthy point about this property is that it allows overlapping elements to justify the value. 
+
+ 
+
+Thus, it is only used for elements whose position we can predict accurately on the website.
+
+Sticky Positioning
+This is an auto mode property and according to the nature of the user’s scroll shifts state from relative and absolute. 
+
+
+
+
+CSS Z-index
+
+When there are multiple overlapping elements, the z-index helps in deciding the order of their visibility. The element having the highest value of z-index is shown first, followed by the other elements.
+
+create 3 boxes : class box1 ,box2 box3 give z-index 3,2,1 respectively and see which one u see
+
+give different background colors ,width and height
+
+
+CSS Forms
+
+some i have provided and others you
+fill in the values as per your choice and make it look appealing
+body {
+    padding: 0px 300px;
+    font-family: 
+    font-weight:
+    give some values
+}
+
+div {
+    padding: 5px 5px;
+    background-color: rgb(164, 206, 147);
+    width: auto;
+    color: white;
+    line-height:;
+    text-align: center;
+    border-radius: 5px;
+    border:;
+}
+
+form {
+    background-color: rgb();
+    border-radius: ;
+    border: 1px solid black;
+    padding:   ;
+    font-size: ;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: ;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+input[type="submit"] {
+    background-color: rgb;
+    font-size: ;
+    color: white;
+    border-radius: 5px;
+    border: ;
+    cursor: ;
+    width: ;
+}
+
+input[type="reset"] {
+    background-color: red;
+    font-size: larger;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb();
+}
+
+input[type="reset"]:hover {
+    background-color: rgb();
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+       <h1>Registration form</h1>
+    </div>
+    <form action="">
+
+        <p class="name">
+            Your Name:<br>
+            <input type="text" placeholder="Your Full Name">
+        </p>
+        <p class="email"> Your Email:<br>
+            <input type="email" name="email" id="" placeholder="Enter your Email">
+        </p>
+        <p class="number">
+            Your mobile number:<br>
+            <input type="text" placeholder="Enter your mobile number">
+        </p>
+        <p class="message">
+            Your message to us:<br>
+            <textarea name="message" id="" cols="50" rows="5" placeholder="Enter your query here"></textarea>
+        </p>
+        <p>Select how you want updates:<br>
+            <select name="Select" id="">
+            <option value="Choose">--Please choose one option--</option>
+            <option value="op1">Message</option>
+            <option value="op2">Call</option>
+            <option value="op3">Email</option>
+        </select>
+        </p>
+        <input type="submit" value="Submit"> <input type="reset" value="Reset">
+    </form>
+</body>
+
+</html>
+
+
+
+CSS Navigation Bar -- Assignment
+
+Create navigation bar with <nav> semantics tag with 4 hyperlinks 
+one for CSS Course , Home , Notes, Assignments , one with search and last with Logout button
+
+style it  : like button , search should have boxshadow radius margin padding background color , color 
+
+a- should have margin textdecoration none color
+
+nav should have padding , font styles etc as per your choice
+
+make it appealing
+
+
+CSS Display:
+
+
+inline
+block
+inline-block
+
+flex
+grid
+
+
+go through our class samples and also w3 schools , practise with containers and several divs  and use different options like flex-direction 
+some eg:
+for justify content
+.flex-container {
+            display: flex;
+            flex-direction: row;
+            background-color: yellowgreen;
+            justify-content: center;
+        }
+for wrap
+.flex-container {
+            display: flex;
+            flex-direction: row;
+            background-color: yellowgreen;
+            flex-wrap: wrap;
+        }
+
+Align Items
+Just like the justify-content property, align-items define the alignment of the flex container but along the cross-axis.
+
+ 
+
+Eg:
+
+.flex-container {
+            display: flex;
+            height: 200px;
+            flex-direction: row;
+            background-color: yellowgreen;
+            align-items: center;
+        }
+
+ Align Content
+This property is very similar to align item but here rather than the flex items, the content present in the item is selected for the property.
+
+ 
+
+Eg:
+
+.flex-container {
+            display: flex;
+            height: 200px;
+            flex-direction: row;
+            background-color: yellowgreen;
+            align-content: center;
+        }
+
+
+Flex Items Properties
+The flex item properties are:
+
+1. Order:
+As the name suggests, this property sets the order in which the flex items are shown.
+
+ 
+
+Eg:
+
+<div style="order: 4;">1</div>
+<div style="order: 3;">2</div>
+<div style="order: 1;">3</div>
+<div style="order: 5;">4</div>
+<div style="order: 2;">5</div>
+
+
+2. Flex Grow & Shrink
+Decides the relative size of flex items. By default, this property is zero and thus items have the same size.
+
+ 
+
+Eg:
+
+<div>1</div>
+<div>2</div>
+<div style="flex-grow: 3;">3</div>
+<div>4</div>
+<div>5</div>
+
+We can also use flex-shrink to decrease size of an element.
+
+3. Align Self
+This property allows default alignment to be overridden for the individual flex items. Try adding inline CSS to see how this property is used.
+
+CSS Grid
+Just like FlexBox, CSS Grid with the use of rows and columns, make it easier to style website elements.
+
+ 
+
+CSS display property allows two grid properties: Grid and Inline Grid. The elements placed in the grid container are called grid items.
+
+ 
+
+Most of the properties of Grid are similar to FlexBox.
+
+ create  a container with display as grid and create 10 items in it 
+ style container and its items with border , background color 
+
+give some margin padding fontsize text align
+
+CSS Media Queries
+Media queries help to add responsiveness to the website by adding breakout points or when only a certain condition is true.
+
+
+CSS transform
+
+CSS transition
+CSS animation
+CSS border images
+
+CSS gradients
+
