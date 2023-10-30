@@ -1,0 +1,69 @@
+HTML tags and their attributes  we have covered till now :
+	• a  - href -- for hyperlinking 
+		○ eg: <a href="https://www.oracle.com target="_blank" > click here to visit Oracle website</a>
+		○ try both with absolute urls as above with the protocol and complete web site url 
+		○ also try relative url , with respect to the current html page which is getting rendered 
+		○ for eg : if u are refering to cart.html from the same folder as of index.html  ,then your link will look like this:
+		○ <a href="cart.html">Cart</a>
+		○ if it is in a different folder you will have to give a relative path to it 
+			§ lets say cart.html is in src2 folder which is a sibling of src folder where index.html resides , so if you want to access cart.html relative url from index.html will look like this
+				□ <a href="../src2/cart.html" target="_self">View the cart</a>
+		○ similarly you can create hyperlinks on images , on buttons , you can change the protocal to mailto and also link to email address 
+	• p - - paragraphs  lorem- vs code  lorem400 
+		○ try style and title attribute with this p
+	• body background image and background color , try diff options from w3 schools as well
+	• any text node of p or h1 try changing text alignment , color ,font family , diff  css properties
+	• try out tags fromlink below
+HTML Quotation Elements (w3schools.com)
+		
+	• h1 ...h6  -
+	• comments
+	• img  src  =  "url of img  "  height= width alt
+	• ul   -- has a nested li  - ul unordered list  li -- list item
+	• ol  -- ordered list  -- 1 23 abc ABC I II III
+	• root element of all the elements -- html document -- html tag is the root 
+	• <html>
+
+
+</html>
+	• direct children of html
+		○ head
+			§ <title> text node where u mention the title  </title>
+			§ <link  href=    rel=stylesheet>
+			§ <style>  </style>  -- internal style
+			§ <meta name="author"  content="muskaan"/>
+			§ <meta name="description"  content=" best tutorial of css"/>
+			§ meta name="viewport"  -- 
+			§ add favicon HTML Favicon (w3schools.com)
+			§ script  -- js  --
+		○ body
+			§ a
+			§ p
+			§ div
+			§ span
+			§ h1..h6
+			§ img
+			§ ul
+			§ ol
+			§ br
+			§ strong
+			§ em  --   screen readers , accessiblity 
+			§ b i  u  --  although they work 
+			§ hr
+			§ <pre> 
+			§ public static void main(String []args){ 
+		                 
+			
+			}</pre>
+			
+			semantics
+			§ header
+			§ footer
+			§ aside
+			§ main
+			§ section
+			§ article
+		○ img link
+		○ html forms
+		○ what is the purpose of the form
+		

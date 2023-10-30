@@ -1,0 +1,123 @@
+Introduction
+JavaScript is generally considered an object-oriented language, though there is some controversy over whether this is true that I will explain below. In essence, objects are a central aspect of the language and key to grasping JavaScript coding. Before analyzing objects and their use, let's define the characteristics of an object-oriented language.
+
+Object-Oriented Coding Briefly Defined
+An object-oriented language allows for object-oriented programming (OOP), or writing code based on objects that interact with one another to give the end user desirable functionality within a program. Objects contain data in the form of fields (properties or variables) and code (procedures or methods).
+
+The other two main programming methods are functional programming and procedural programming. Functional programming uses a method of coding that evaluates expressions rather than executing commands or program instructions. Procedural programming, on the other hand, is a coding paradigm that focuses on the concept of a procedure call or a set of commands that must be followed.
+
+Is JavaScript Truly an Object-Oriented Language?
+There is some controversy over whether JavaScript is a true object-oriented language or not. It is undeniable that JavaScript relies on coding through the use of objects. However, it also shares many aspects of both procedural programming and functional programming.
+
+What makes JavaScript procedural is that it uses prototypes instead of classes for inheritance. It also includes some methods of functional programming, such as its reliance on functions as actual objects containing properties and methods within themselves. With that said, let's take a look at the way javaScript handles objects and what they actually consist of.
+
+JavaScript Objects As One of Two Main Data Types
+Although objects are a very important part of this programming language, they are not the only thing that keeps it together or allows programmers to interact with the code. Primitives are another important part of the JavaScript language. In contrast to objects, they are data that is immutable and cannot be changed. In fact, when looking at the guts of the language, JavaScript can be separated into really only two data types:
+
+Objects
+Primitives
+
+ primitives are responsible for letting the programmer know things. For example, they can show a value that is unknown or undefined.
+
+ What Exactly Is an Object?
+A simple way of analyzing what an object is within JavaScript code is to compare an object to what we see around us in the real world. Let's take a look at an apple, for example, as it is an object we can see every day around us and probably can find right now in our kitchens. An apple is an object with various properties that describe its characteristics. It has always true properties, like the fact it is round, as well as different properties depending on apple type, such as color (they can be red, green or yellow), with or without a stem on one end, and a slight concave on the other end.
+
+The DOM, or document model object, is an important JavaScript object model sometimes referred to as the most important object within JavaScript. However, it is more of a blueprint than an individual object per se. When a page is loaded, the browser creates a DOM of the page on that particular website. An HTML DOM model is created as a tree of various objects of the page. They include such aspects as Document --> Root Element --> Head and Body Elements.
+
+
+Accessing Properties and More for Debugging or Printing
+When using the alert command, or alert(object), the output will typically display [Object Object]. Thus, the content parameters of an object will not show for debugging or print (showing up on console display). However, there are ways around this in accessing an object’s content or elements within it for debugging or printing.
+
+Most, if not all, browsers also have their own built-in debugging tools worth tapping into. For instance, Firefox has the Firefox Developer Tools that replaced Firebug, while Chrome has Chrome DevTools. Below are some general commands that should also work. For simple debugging purposes, this alert function should do in general:
+
+alert(Object.methodName())
+
+Conclusion
+Objects are a central aspect of a JavaScript, although you may have noticed the language is much deeper than just this aspect alone. It includes primitives, another data type, variants, and more. Objects, however, are one of the key aspects that define JavaScript programming.
+
+Introduction
+Above I mentioned JavaScript objects and how they function within the language. I also mentioned that objects are only one of two main JavaScript data types, the other being primitives. I will go more into depth here about what primitives consist of, their roles, and multiple variants.
+
+How JavaScript Handles Data
+Like HTML, JavaScript is a client-side language that does not need to be compiled prior to runtime, thus it is interpreted. However, unlike HTML, which is a markup language, JavaScript is a scripting language.
+
+This means that its syntax or code is a subset of programming languages and it acts as a mediator between programs in order to generate data. It can essentially guide other programs through the use of its scripts.
+
+JavaScript follows the ECMAScript standard, which scripting languages rely on, and which include eight data types overall. One of the data types is objects, while the other is primitives, which have seven variations.
+
+The seven types of primitives include:
+
+Number
+String
+Boolean
+BigInt
+Null
+Undefined
+Symbol
+The main thing to keep in mind about primitives is that they represent data that has no methods and cannot be altered. They also have a fixed size in memory.
+
+Variables hold the actual values of primitive types, but they hold only references to the values of reference types.
+
+If a primitives has a value contained within it, it can be attributed to a variable. The variable holds the reference to the values of referred types. Here is an example below of how variables reference values:
+
+let a =  1.45
+
+Primitives vs. Objects
+Primitives differ from objects because they have no properties, thus their values cannot be changed. They are immutable. They also have no methods and can be looked at as just code or data. When primitives are called upon, the JavaScript language will call upon their object counterpart and switch between the two depending on need.
+
+Thus, in reality and in its bare code, JavaScript will form an object, use it, and return its results. This means that even though primitives are vital to the JavaScript language, they are also tied to objects through being copied and destroyed.
+
+Variables can hold primitives or compound data (arrays or clusters of data and objects) without being tied to objects. Properties is the term for variables that are actually tied to objects.
+
+Let us take a look at what some of these primitives do as an example of their functionality.
+Examples of Primitives and Their Purpose
+Null is a primitive that signifies that the value is unknown. Keep in mind that the typeof operator returns object for null due to ECMAScript’s evaluation.
+
+Undefined is not a declared value and is not defined in any meaningful way for someone to interpret. Any variable not assigned a value belongs to this category.
+
+Boolean refers to a logical statement with only two values: true or false.
+
+String is a primitive that represents characters put together in words or phrases that make up text. Thus, it can be referred to as textual data.
+
+BigInt represents integers that were possibly calculated and formed into digits of precision only limited by available system memory (arbitrary precision format). In essence, this primitive represents whole numbers larger than 253 - 1: the largest number JavaScript can reliably represent.
+
+An example is when appending n to the end of an integer literal or calling the function BigInt():
+
+const bigIntNum = 434343434455n
+
+or
+
+const hugeStringValue =  BigInt("34243434324234")
+
+Number is a primitives type continuing 8 bytes of data.
+Number.NEGATIVE_INFINITY   // -Infinity
+Number.POSITIVE_INFINITY   // Infinity
+
+Symbol can be used as a key of an object’s property. Here is an example using apple as an object:
+
+let key=Symbol()
+let obj = {
+    [key]='apple'
+}
+
+When objects are added, subtracted or printed (shown up on the console) using the alert(obj) command, primitives come into play. In each of these cases, objects are converted to primitives before any of these three operations are carried out within JavaScript.
+
+AutoBoxing and Unboxing Primitives Using JS++
+When using JS++, an extension of JavaScript, you can take advantage of autoboxing. This occurs when a JS++ (extension of JavaScript) compiler converts primitive data types to their corresponding object wrapper classes, in a sense using a wrapper to convert a primitive value to an object.
+
+For example, string will be converted to System.String, which is a class that happens to be the wrapper class for the string primitive type. JS++ introduces a compare method that vanilla JavaScript lacks.
+
+Thus, the JS++ compiler autoboxes the string value with the System.String object wrapper class in order to provide the compare method. Here is an example comparing strings blue and red:
+
+import System;
+ 
+Comparison compare1 = "blue".compare("red"); // Valid due to auto-boxing
+Comparison compare2 = (new System.String("blue")).compare("red"); // Equivalent boxed expression
+
+Another example of autoboxing is when JavaScript accesses variables within a primitive and when .call and .apply functions are used for a .this argument using a primitive. Here is an example of variable access:
+
+var part = 'apple’.substr(0,2)
+Unboxing also occurs within JS++ when an object wrapper class is converted to its corresponding primitive data type.
+
+Conclusion
+Although most aspects of JavasScript may appear to focus on objects and how everything within the code relates to objects, this is not always the case. Primitives are also part of the JavaScript language. These seven primitives hold information that is vital to the language and keeps it afloat.
