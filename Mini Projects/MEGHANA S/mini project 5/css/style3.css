@@ -1,0 +1,18 @@
+
+.one{
+width: 300px;
+height: 300px;
+float: right;
+}
+.two {
+    width: 300px;
+    height: 300px;
+    float: left;
+
+}
+.float {
+    margin-top: 250px;
+}
+
+
+
