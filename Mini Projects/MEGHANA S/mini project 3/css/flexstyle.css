@@ -1,0 +1,36 @@
+.container {
+    height:900px;
+    border:2px solid rgb(18, 158, 63);
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color:  rgb(30, 4, 4);
+    align-items: center;
+    justify-content: space-around;
+   
+ }
+ .item {
+     background-color: rgb(223, 29, 29);
+     border: 2px solid rgb(20, 6, 113);
+     height:100px;
+     width: 200px;
+     margin: 2px;
+     text-align: center;
+     padding-top: 10%;
+     color:azure;
+    
+ }
+
+    @media (min-width:300px) and (max-width:700px){
+    .container{
+
+        display:block;
+        background-color: rgb(180, 161, 39);
+    }}
+    @media (min-width:800px) {
+        .container{
+
+            display:block;
+            background-color: rgb(94, 25, 164);
+        }}
+   

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexlayout</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+        body{
+            display:flex;
+            flex-direction: column;
+
+        }
+        #wrapper-div{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            min-height: 150px;
+            background-color: rgb(243, 244, 248);
+            margin: auto;
+           
+           
+        }
+        #headersection{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            min-height: 80px;
+            background-color: rgb(234, 187, 118);
+            padding-left: 2%;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+      #nav-div{
+        display: flex;
+            flex-direction: column;
+            width: 100%;
+            min-height: 70px;
+            background-color: rgb(230, 206, 151);
+            margin-top: 10px;
+            padding-left: 2%;
+            justify-content: center;
+           
+            align-items: center;
+            color: white;
+      }
+      #section{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        min-height: 70px;
+        margin-top: 10px;
+            padding-left: 2%;
+            justify-content: center;
+           
+            background-color: rgb(215, 242, 109);
+            align-items: center;
+            color: white;
+      }
+      #article{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        min-height: 70px;
+      
+            padding-left: 2%;
+            justify-content: center;
+           
+            background-color: rgb(235, 208, 99);
+            align-items: center;
+            color: white;
+
+      }
+     
+      
+      #sidebar{
+        display:flex;
+        flex-direction: column;
+        display: flex;
+        flex-direction: column;
+        width: 21%;
+        min-height: 140px;
+        margin-top: 10px;
+       justify-content: center;
+        position:fixed;
+        flex-basis: 20%;
+        left: 68%;
+        padding-left: 10px;
+       color: antiquewhite;
+   
+        background-color: rgb(233, 167, 92);
+      }
+      #summary{
+        display: flex;
+            flex-direction: column;
+            width: 100%;
+            min-height: 70px;
+            background-color: rgb(162, 236, 138);
+            margin-top: 10px;
+            padding-left: 2%;
+            justify-content: center;
+
+      }
+      #footer{
+        display: flex;
+            flex-direction: column;
+            width: 100%;
+            min-height: 70px;
+            background-color: rgb(233, 216, 123);
+            margin-top: 10px;
+            padding-left: 2%;
+            justify-content: center;
+            text-align: center;
+
+      }
+     
+      
+    </style>
+</head>
+<body>
+   <div id="wrapper-div">
+    <div id="headersection"><b>Header Section</b></div>
+<div id="nav-div"><a href="a"></a>
+   
+    <nav>
+        <a href=" https://www.google.com">navigationlink 1</a>
+        <a href="https://www.amazon.in">navigationlink 2</a>
+        <a href="https://www.flipcart.com">navigationlink 3</a>
+    </nav>
+</div>
+<div id="maindiv">
+    <div  id="sidebar">
+        sidebar
+       </div>
+       <div><section id="section">
+        <h1>section part</h1>
+        <p>
+            (sometext)
+    
+            
+        </p>
+        </section></div>
+        <div><article id="article">
+            <h1>article part</h1>
+            <p>(some text)</p>
+        </article></div>
+</div>
+<div id="summary">
+    <details>
+        <summary><b>summary:click here to show details</b></summary>
+       
+      </details>
+</div>
+<div id="footer">
+    <footer>
+       <p><b>Footer section</b></p>
+       
+      </footer>
+</div>
+   
+   
+   
+   </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+Asynchronous Programming
+
+JavaScript --built on single threaded programming language
+with one call stack 
+one memory heap
+able to execute one path / routine at a time
+
+
+over the years js has grown
+gained ability to read from thefiles , messages , user confirmation , update user interface
+
+
+what is the basis for js asynchronous programming ?
+that strength comes from callbacks ? -- early days  were the 
+answer to the js 
+
+to avoid the callback calling another callback whihc in turn
+calls another call back , which results  in "callback hell"
+
+in the recent years , Promise object are used
+
+
+Although your application is single threaded , but js gives you the ability to create /launch asynchronous work  ,
+through browser web apis
+
+
+in recent years , callbacks are still there
+ , but they have been now not directly used , instead , callbacks are wrapped inside Promise object
+
+ 

@@ -1,0 +1,115 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+/*.main {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 600px;
+    background-color: orange;
+    justify-content: center;
+    align-items: center;
+}*/
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 48%; 
+    min-height: 150px; 
+    margin: auto;
+    background-color: darkorange;
+}
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    min-height: 100px;
+    color: white;
+    font-size: 55px;
+}
+li {
+    list-style-type: none;
+}
+#three {
+    display: flex;
+    flex-direction: row;
+    min-height: 550px;
+    background-color: gray;
+}
+#nav {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+    justify-content: left;  
+}
+#form {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    flex-basis: 50%;
+    border-radius: 8px;
+    margin: 8px;
+    padding: 5px;
+}
+#section {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+    align-items: center;
+}
+#footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 60px;
+    background-color: orange;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+h1 {
+    text-align: center;
+    padding: 6px;
+    font-size: 25px;
+}
+#p1,#p2,#p3 {
+    padding: 5px;
+}
+#para1,#para2,#para3 {
+    font-size: 15px;
+}
+.note,label {
+    font-size: 15px;
+}
+#one {
+    align-items: center;
+}
+#align {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#fieldset {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 20px;
+    align-items: start;
+    
+    
+}
+#sectionp {
+    color: darkorange;
+}
+
+.Expectation {
+    margin-top: 8px;
+}

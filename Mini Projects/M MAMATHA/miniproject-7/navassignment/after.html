@@ -1,0 +1,12 @@
+<div id="parentElement">
+    <p id="referenceElement">Existing paragraph</p>
+  </div>
+  
+  <script>
+    var parent = document.getElementById("parentElement");
+    var referenceElement = document.getElementById("referenceElement");
+    var newElement = document.createElement("p");
+    var text = document.createTextNode("New paragraph");
+    newElement.appendChild(text);
+    parent.insertBefore(newElement, referenceElement.nextSibling);
+  </script>

@@ -1,0 +1,612 @@
+Give the element a unique identifier:
+
+<div id="demodiv">
+  <p>
+    This is text.
+  </p>
+</div>
+
+Use document.getElementById() to get a reference to the specific element:
+
+    const demodiv = document.getElementById("demodiv");
+
+Find its parent via the parentNode property:
+
+    const parent = demodiv.parentNode;
+
+Find its children via the childNodes property:
+
+    const children = demodiv.childNodes;
+
+Discussion:
+
+A web document is organized like an upside-down tree, with the topmost element 
+at the root and all other elements branching out beneath. Except for the root element (HTML), 
+each element has a parent node, and all of the elements are accessible via the document.
+
+The most commonly used DOM method is document.getElementById().
+ It takes one parameter: a case-sensitive string with the element’s identifier. 
+ It returns an element object, 
+which is referenced to the element if it exists; otherwise, it returns null.
+
+
+The returned element object has a set of methods and properties,
+ including several inherited from the node object. The node methods are primarily associated with traversing the document tree.
+ For instance, to find the parent node for the element ,you can use the following code :
+
+    const parent = document.getElementById("demodiv").parentNode;
+
+ You can find out the type of element for each node through the nodeName property:
+
+    const type = parent.nodeName;
+
+    If you want to find out what children an element has, you can traverse a collection of them via a NodeList, 
+    obtained using the childNodes property:
+==========================================================
+let outputString = '';
+
+if (demodiv.hasChildNodes()) {
+  const children = demodiv.childNodes;
+  children.forEach(child => {
+    outputString += `has child ${child.nodeName} `;
+  });
+}
+console.log(outputString);
+Given the element in the solution, the output would be:
+
+"has child #text has child P has child #text "
+
+
+You might be surprised by what appeared as a child node. In this example, whitespace before and after the paragraph element is itself a child node with a nodeName of #text. For the following div element:
+
+<div id="demodiv" class="demo">
+  <p>Some text</p>
+  <p>Some more text</p>
+</div>
+the demodiv element (node) has five children, not two:
+
+has child #text
+has child P
+has child #text
+has child P
+has child #text
+===========================================================
+
+In modern web browsers you can use the following code - forEach array method of NodeList
+
+===========================================================
+
+// use querySelectorAll to find all list items on a page
+const items = document.querySelectorAll('li');
+
+items.forEach(item => {
+  console.log(item.firstChild.data);
+});
+
+
+==========================================
+forEach() is an array method, but querySelectorAll() produces a NodeList which is a different type of object than an array. Thankfully, 
+modern browsers have built-in support for forEach, allowing us to iterate over a NodeList as though it is an array.
+
+else you have to use Array.from( ) method and send the NodeList as its argument
+
+
+============================================
+
+Finding All Elements That Share an Attribute
+Problem
+You want to find all elements in a web document that share the same attribute.
+
+Solution
+Use the universal selector (*) in combination with the attribute selector to find all elements that have an attribute, regardless of its value:
+
+const elems = document.querySelectorAll('*[class]');
+The universal selector can also be used to find all elements with an attribute that’s assigned the same value:
+
+const reds = document.querySelectorAll('*[class="red"]');
+Discussion
+The solution demonstrates a rather elegant query selector, the universal selector (*). The universal selector evaluates all elements, so it’s the one you want to use when you need to verify something about each element. In the solution, we want to find all of the elements with a given attribute.
+
+To test whether an attribute exists, all you need to do is list the attribute name within square brackets ([attrname]). In the solution, we’re first testing whether the element contains the class attribute. If it does, it’s returned with the element collection:
+
+var elems = document.querySelectorAll('*[class]');
+Next, we’re getting all elements with a class attribute value of red. If you’re not sure of the class name, you can use the substring-matching query selector:
+
+const reds = document.querySelectorAll('*[class="red"]');
+Now any class name that contains the substring red matches.
+
+You could also modify the syntax to find all elements that don’t have a certain value. For instance, to find all div elements that don’t have the target class name, use the :not negation operator:
+
+const notRed = document.querySelectorAll('div:not(.red)');
+Accessing All Elements of a Specific Type
+Problem
+You want to access all img elements in a given document.
+
+Solution
+Use the document.getElementsByTagName() method, passing in img as the parameter:
+
+const imgElements = document.getElementsByTagName('img');
+Discussion
+The document.getElementsByTagName() method returns a collection of nodes (a NodeList) of a given element type, such as the img tag in the solution. The collection can be traversed like an array, and the order of nodes is based on the order of the elements within the document (the first img element in the page is accessible at index 0, etc.):
+
+const imgElements = document.getElementsByTagName('img');
+for (let i = 0; i < imgElements.length; i += 1) {
+  const img = imgElements[i];
+  ...
+}
+As  in “Traversing the Results from querySelectorAll() with forEach()”,
+ a NodeList collection can be traversed like an array, 
+ but it isn’t an Array object. You can’t use Array object methods, 
+ such as push() and reverse(), with a NodeList. 
+ Its only property is length, and its only method is item(), 
+ returning the element at the position given by an index passed in as a parameter:
+
+const img = imgElements.item(1); // second image
+
+
+NodeList is an intriguing object because it’s a live collection, 
+which means changes made to the document after the NodeList is retrieved are reflected in the collection.
+below example ,demonstrates the NodeList live collection functionality, as well as getElementsByTagName.
+
+In the example, three images in the web page are accessed as a NodeList collection using the getElementsByTagName method. The length property, with a value of 3, is output to the console. Immediately after, a new paragraph and img elements are created, and the img is appended to the paragraph. To append the paragraph following the others in the page, getElementsByTagName is used again, this time with the paragraph tags (p). We’re not really interested in the paragraphs, but in the paragraphs’ parent elements, found via the parentNode property on each paragraph.
+
+The new paragraph element is appended to the paragraph’s parent element, and the previously accessed NodeList collection’s length property is again printed out. Now, the value is 4, reflecting the addition of the new img element.
+
+ Demonstrating getElementsByTagName and the NodeList live collection property
+
+
+ ---this is in js folder  -- navdemo2 subfolder --check it out
+<!DOCTYPE html>
+<html>
+<head>
+<title>NodeList</title>
+</head>
+<body>
+  <p><img src="firstimage.jpg" alt="image description" /></p>
+  <p><img src="secondimage.jpg" alt="image description" /></p>
+  <p><img src="thirdimage.jpg" alt="image description" /></p>
+
+<script>
+  const imgs = document.getElementsByTagName('img');
+  console.log(imgs.length);
+  const p = document.createElement('p');
+  const img = document.createElement('img');
+  img.src = './img/someimg.jpg';
+  p.appendChild(img);
+
+  const paras = document.getElementsByTagName('p');
+  paras[0].parentNode.appendChild(p);
+
+  console.log(imgs.length);
+</script>
+
+</body>
+</html>
+
+
+Discovering Child Elements Using the Selectors API
+Problem
+You want to get a list of all instances of a child element,
+ such as img elements, that are descendants of a parent element, such as article elements,
+  without having to traverse an entire collection of elements.
+
+Solution
+Use the Selectors API and access the img elements contained within article elements using CSS-style selector strings:
+
+    const imgs = document.querySelectorAll('article img');
+
+
+Discussion
+There are two selector query API methods.
+ The first, querySelectorAll(),
+  the second is querySelector().
+   The difference between the two is that querySelectorAll() returns all elements that match the selector criteria,
+    while querySelector() only returns the first found result.
+
+The selector syntax is derived from CSS selector syntax,
+ except that rather than style the selected elements, they’re returned to the application. 
+ In the example, all img elements that are descendants of article elements are returned.
+  To access all img elements regardless of parent element, use:
+
+const imgs = document.querySelectorAll('img');
+
+In the solution, you’ll get all img elements that are direct or indirect descendants of an article element.
+ This means that if the img element is contained within a div that’s within an article, 
+ the img element will be among those returned:
+
+<article>
+   <div>
+      <img src="..." />
+   </div>
+</article>
+If you want only those img elements that are direct children of an article element, use the following:
+
+const imgs = document.querySelectorAll('article > img');
+
+If you’re interested in accessing all img elements that are immediately followed by a paragraph, use:
+
+const imgs = document.querySelectorAll('img + p');
+
+If you’re interested in an img element that has an empty alt attribute, use the following:
+
+const imgs = document.querySelectorAll('img[alt=""]');
+
+If you’re only interested in img elements that don’t have an empty alt attribute, use:
+
+const imgs = document.querySelectorAll('img:not([alt=""])');
+
+The negation pseudoselector (:not) is used to find all img elements with alt attributes that are not empty.
+
+Unlike the collection returned with getElementsByTagName() covered earlier,
+ the collection of elements returned from querySelectorAll() is not a “live” collection.
+  Updates to the page are not reflected in the collection if the updates occur after the collection is retrieved.
+
+
+  NOTE
+Though the Selectors API is a wonderful creation, it shouldn’t be used for every document query.
+ To keep your applications performant, its always recommended to use the most restrictive
+  query possible when accessing elements. 
+  For example, it’s more efficient (meaning faster for the browser) to use getElementById()
+   to get a specific element given an identifier than using querySelectorAll() for the same element.
+
+
+   Changing an Element’s Class Value
+Problem
+You want to update the CSS rules applied to an element by changing its class value.
+
+Solution
+Use the classList property of an element to add, remove, and toggle class values:
+
+const element = document.getElementById('example-element');
+// add a new class
+element.classList.add('new-class');
+// remove an existing class
+element.classList.remove('existing-class');
+// if toggle-me is present it is removed, if not it is added
+element.classList.toggle('toggle-me');
+
+
+Discussion
+Using classList allows you to easily manipulate the class properties of a selected element. This can come in handy for updating or swapping styles without using inline CSS. At times, it may be helpful to check if an element already has a class value applied, which can be accomplished with the contains method:
+
+if (element.classList.contains('new-class')) {
+  element.classList.remove('new-class');
+}
+It is also possible to add, remove, or toggle multiple classes, either by passing them each as individual properties or using a spread operator:
+
+// add multiple classes
+.classList.add("my-class", "another-class");
+
+// remove multiple classes with a spread operator
+const classes = ["my-class", "another-class"];
+div.classList.remove(...classes);
+Setting an Element’s Style Attribute
+Problem
+You want to directly add or replace an inline style on a specific element.
+
+Solution
+To change one CSS property as an inline style, modify the property value via the element’s style property:
+
+elem.style.backgroundColor = 'red';
+To modify one or more CSS properties for a single element, you can use setAttribute() and create an entire CSS style rule:
+
+elem.setAttribute('style',
+  'background-color: red; color: white; border: 1px solid black');
+These techniques set an inline style value for the HTML element, which will appear within the HTML itself. To demonstrate further, the following JavaScript sets a style attribute on an element with an ID of card:
+
+const card = document.getElementById('card');
+card.setAttribute(
+  'style',
+  'background-color: #ecf0f1; color: #2c3e50;'
+);
+The resulting HTML output includes the inline style value:
+
+<div id="card" style="background-color: #ecf0f1; color: #2c3e50;">
+...
+</div>
+Discussion
+An element’s CSS properties can be modified in JavaScript using one of three approaches. As the solution demonstrates, the simplest approach is to set the property’s value directly using the element’s style property:
+
+elem.style.width = '500px';
+If the CSS property contains a hyphen, such as font-family or background-color, use the CamelCase notation for the property:
+
+elem.style.fontFamily = 'Courier';
+elem.style.backgroundColor = 'rgb(255,0,0)';
+The CamelCase notation removes the dash and capitalizes the first letter following the dash.
+
+You can also use setAttribute() or cssText to set the style property. This is useful when adding multiple styles:
+
+// using setAttribute
+elem.setAttribute('style','font-family: Courier; background-color: yellow');
+
+// alternately apply a value to style.cssText
+elem.style.cssText = 'font-family: Courier; background-color: yellow';
+The setAttribute() method is a way of adding an attribute or replacing 
+the value of an existing attribute for a web page element. The first argument to
+ the method is the attribute name (automatically lowercased if the element is an HTML element)
+  and the new attribute value.
+
+When setting the style attribute, all CSS properties that are changed must be 
+specified at the same time, as setting the attribute erases any previously set values. 
+However, setting the style attribute using setAttribute() does not erase any settings made in a 
+stylesheet, or set by default by the browser.
+
+
+
+Adding Text to a New Paragraph
+Problem
+You want to create a new paragraph with text and insert it into the document.
+
+Solution
+Use the createTextNode method to add text to an element:
+
+const newPara = document.createElement('p');
+const text = document.createTextNode('New paragraph content');
+newPara.appendChild(text);
+
+
+===================================================================
+
+
+Inserting a New Element in a Specific DOM Location
+Problem
+You want to insert a new paragraph just before the third paragraph within a div element.
+
+Solution
+Use some method to access the third paragraph, such as getElementsByTagName(), to get all of the paragraphs for a div element. Then use the createElement() and insertBefore() DOM methods to add the new paragraph just before the existing third paragraph:
+
+// get the target div
+const div = document.getElementById('target');
+
+// retrieve a collection of paragraphs
+const paras = div.getElementsByTagName('p');
+
+// create the element and append text to it
+const newPara = document.createElement('p');
+const text = document.createTextNode('New paragraph content');
+newPara.appendChild(text);
+
+// if a third para exists, insert the new element before
+// otherwise, append the paragraph to the end of the div
+if (paras[2]) {
+  div.insertBefore(newPara, paras[2]);
+} else {
+  div.appendChild(newPara);
+}
+Discussion
+The document.createElement() method creates any HTML element, 
+which then can be inserted or appended into the page. In the solution, the new paragraph element is
+ inserted before an existing paragraph using insertBefore().
+
+Because we’re interested in inserting the new paragraph before the existing third paragraph,
+ we need to retrieve a collection of the div element’s paragraphs, check to make sure a third paragraph exists, 
+ and then use insertBefore() to insert the new paragraph before the existing one. If the third paragraph doesn’t
+  exist, we can append the element to the end of the div element using appendChild().
+
+
+
+
+
+  Adding Up Values in an HTML Table
+  Problem
+  You want to sum all numbers in a table column.
+  
+  Solution
+  Traverse the table column containing numeric string values, convert the values to numbers, and sum the numbers:
+  
+  let sum = 0;
+  
+  // use querySelectorAll to find all second table cells
+  const cells = document.querySelectorAll('td:nth-of-type(2)');
+  
+  // iterate over each
+  cells.forEach(cell => {
+    sum += Number.parseFloat(cell.firstChild.data);
+  });
+
+
+  Discussion
+  The :nth-of-type(n) selector matches the specific child (n) of an element. 
+  By using td:nth-of-type(2) we are selecting the second td child element.
+   In the example HTML markup, the second td element in the table is a numeric value:
+  
+  <td>Washington</td><td>145</td>
+  The parseInt() and parseFloat() methods convert strings to numbers,
+   but parseFloat() is more adaptable when it comes to handling numbers in an HTML table. 
+   Unless you’re absolutely certain all of the numbers will be integers, 
+   parseFloat() can work with both integers and floating-point numbers.
+
+
+
+
+
+   Deleting Rows from an HTML Table
+Problem
+You want to remove one or more rows from an HTML table.
+
+Solution
+Use the removeChild() method on an HTML table row,
+ and all of the child elements, including the row cells, are also removed:
+
+const parent = row.parentNode;
+const oldrow = parent.removeChild(parent);
+
+
+
+
+
+
+Hiding Page Sections
+Problem
+You want to hide an existing page element and its children until needed.
+
+Solution
+You can set the CSS visibility property to hide and show the element:
+
+msg.style.hidden = 'visible'; // to display
+msg.style.hidden = 'hidden'; // to hide
+
+Or you can use the CSS display property:
+
+msg.style.display = 'block'; // to display
+msg.style.display = 'none'; // to remove from display
+
+Discussion
+
+Both the CSS visibility and display properties can be used to hide and show elements. 
+There is one major difference between the two that impacts which one you’ll use.
+
+The visibility property controls the element’s visual rendering,
+ but its presence also affects other elements.
+  When an element is hidden, it still takes up page space. 
+  The display property, on the other hand, removes the element completely from the page layout.
+
+The display property can be set to several different values, but four are of particular interest to us:
+
+none
+When display is set to none, the element is removed completely from display.
+
+block
+When display is set to block, the element is treated like a block element, with a line break before and after.
+
+inline-block
+When display is set to inline-block, the contents are formatted like a block element, which is then flowed like inline content.
+
+inherit
+This is the default display, and specifies that the display property is inherited from the element’s parent.
+
+There are other values, but these are the ones we’re most likely to use within JavaScript applications.
+
+Unless you’re using absolute positioning with the hidden element,
+you’ll want to use the CSS display property. 
+Otherwise, the element will affect the page layout,
+ pushing any elements that follow down and to the right, depending on the type of hidden element.
+
+There is another approach to removing an element out of page view, 
+and that is to move it totally offscreen using a negative left value.
+ This could work, especially if you’re creating a slider element that will slide in from the left. 
+ It’s also an approach that the accessibility community has suggested using when you have content
+  that you want rendered by assistive technology (AT) devices, but not visually rendered.
+
+
+
+
+
+
+Creating Hover-Based Pop-Up Info Windows
+Problem
+You want to create an interaction where a user mouses over a thumbnail image and additional information is displayed.
+
+Solution
+This interaction is based on four different functionalities.
+
+First, you need to capture the mouseover and mouseout events for each image thumbnail 
+in order to display or remove the pop-up window,
+ respectively.
+
+
+ In the following code, the cross-browser event handlers are attached to all images in the page:
+
+window.onload = () => {
+  const imgs = document.querySelectorAll('img');
+  imgs.forEach(img => {
+    img.addEventListener(
+      'mouseover',
+      () => {
+        getInfo(img.id);
+      },
+      false
+    );
+
+    img.addEventListener(
+      'mouseout',
+      () => {
+        removeWindow();
+      },
+      false
+    );
+  });
+};
+Second, you need to access something about the item you’re hovering over in order to know what to use 
+to populate the pop-up bubble. 
+The information can be in the page, 
+or you can use web server communication to get the information:
+
+function getInfo(id) {
+  // get the data
+}
+Third, you need to either show the pop-up window,
+ if it already exists and is not displayed, or create the window.
+  In the following code, the pop-up window is created just below the object, 
+  and just to the right when the web server call returns with the information about the item.
+   The getBoundingClientRect() method is used to determine the location where the pop-up 
+   should be placed, and createElement() and createTextNode() are used to create the pop-up:
+
+// compute position for pop-up
+function compPos(obj) {
+  const rect = obj.getBoundingClientRect();
+  let height;
+  if (rect.height) {
+    height = rect.height;
+  } else {
+    height = rect.bottom - rect.top;
+  }
+  const top = rect.top + height + 10;
+  return [rect.left, top];
+}
+
+function showWindow(id, response) {
+  const img = document.getElementById(id);
+
+  console.log(img);
+  // derive location for pop-up
+  const loc = compPos(img);
+  const left = `${loc[0]}px`;
+  const top = `${loc[1]}px`;
+
+  // create pop-up
+  const div = document.createElement('popup');
+  div.id = 'popup';
+  const txt = document.createTextNode(response);
+  div.appendChild(txt);
+
+  // style pop-up
+  div.setAttribute('class', 'popup');
+  div.setAttribute('style', `position: fixed; left: ${left}; top: ${top}`);
+  document.body.appendChild(div);
+}
+Lastly, when the mouseover event fires,
+ you need to either hide the pop-up window or r
+ emove it—whichever makes sense in your setup.
+  Since the application created a new pop-up window in the mouseover event,
+   it removes the pop-up in the mouseout event handler:
+
+function removeWindow() {
+  const popup = document.getElementById('popup');
+  if (popup) popup.parentNode.removeChild(popup);
+}
+Discussion
+Creating a pop-up information or help window doesn’t have to be complicated 
+if you keep the action simple and follow the four steps outlined in the solution.
+
+If the pop-up provides help for form elements, 
+then you might want to cache the information within the page, 
+and just show and hide pop-up elements as needed. However, if you have pages with hundreds of items,
+ you’ll have better performance if you get the pop-up window information on demand via a web service call.
+
+When I positioned the pop-up in the example, I didn’t place it directly over the object. 
+The reason is that I’m not capturing the mouse position to have the pop-up follow the cursor around, 
+ensuring that I don’t move the cursor directly over the pop-up. 
+But if I statically position the pop-up partially over the object,
+ the web page readers could move their mouse over the pop-up,
+  which triggers the event to hide the pop-up…which then triggers the event to show the pop-up, and so on. 
+  This creates a flicker effect, not to mention a lot of network activity.
+
+If, instead, I allowed the mouse events to continue by returning true from either event handler function,
+when the web page readers move their mouse over the pop-up,
+ the pop-up won’t go away. However, if they move the mouse from the image to the pop-up, 
+ and then to the rest of the page, the event to trigger the pop-up event removal won’t fire, 
+ and the pop-up is left on the page.
+
+The best approach is to place the pop-up directly under 
+(or to the side, or a specific location in the page) rather than directly over the object.

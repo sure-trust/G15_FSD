@@ -1,0 +1,90 @@
+Intro MERN
+
+29 May 2023
+09:49
+
+
+MERN stack can be seen as a collection of tools that share a common denominator ie language js
+
+web client and server app using MERN -following MVC arch
+
+model and controller of mvc --
+
+	• building Restful apis with express js and mongoose
+	• http protocol
+	• types of methods
+	• status codes
+	• url
+	• REST and CRUD ops
+
+
+topics specific to ExpressJS :
+	• request handlers
+	• middleware
+	• security
+topics about Mongoose
+	• schemas
+	• models
+	• custom validation
+
+View of MVC -- React
+	• Rich UI with declarative API
+	• u will learn to build ReactJs web app and components
+	• Redux
+
+Real time communication with ExpressJS and SocketIO
+
+	Explore Section :
+	
+	a. Visit sites having components developed using ReactJs   --    Rich UI - go through these web sites if you dont have the apps like facebook , instagram , airbnb ,netflix  , uber , reddit ,
+
+	b. Read about Sir Tim Berners Lee
+
+c . Read History of Internet
+
+Download Visual Studio Code - Mac, Linux, Windows
+
+========
+
+MVC
+
+layered architecture
+
+Model View Controller 
+
+
+Student Management System
+
+main business data will be related to
+	• Student
+	• Attendance
+	• Batch
+	• Performance
+	
+Model of Student
+:
+id
+firstName
+lastName
+address
+mobileNumber
+emailId
+schoolName
+fatherName
+gender
+
+
+Layered architecture
+
+Sorry , could nt get pen drawn images
+
+
+VS code -- IDE  
+
+Integrated Development Environment
+
+Java  -- Eclipse /Netbeans  -InetllijIdea
+
+Python --Pycharm IDE 
+
+
