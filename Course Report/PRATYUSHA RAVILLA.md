@@ -23,5 +23,5 @@ Below is a table summarizing the mini projects and final project completed durin
 
 | Description                                                 | Link                                    |
 |-------------------------------------------------------------|-----------------------------------------|
-| Mini Projects: Calculator, React_project, Simple Js mixed Projects, Single page website, Mumbai_Marathon_webpage, geoLocation, Portfolio website | [click here](https://github.com/pratyusha-ravilla/G15_FSD/tree/main/Mini%20Projects/PRATYUSHA%20RAVILLA) |
+| Mini Projects: Calculator, React_project, Simple Js mixed Projects, Single page website, Mumbai_Marathon_webpage, geoLocation, Portfolio website | [click here](https://github.com/sure-trust/G15_FSD/tree/main/Mini%20Projects/PRATYUSHA%20RAVILLA) |
 | Final Project: Medico.in is my final capstone project     | [click here](https://github.com/pratyusha-ravilla/G15_FSD/tree/main/Final%20Capstone%20Project/PRATYUSHA%20RAVILLA/Medico.in) |
