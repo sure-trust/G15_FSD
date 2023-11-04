@@ -6,14 +6,14 @@
 
 
 <h3 align="center">SURE Trust - Skill Upgradation for Rural-youth Empowerment Trust</h3>
-  <h2> Course Name </h2>
+  <h2> Course Name </h2>  
 </div>
 
 # Course Report
 
 ## Name: [Your Name]
 
-## Qualifications: [Your Qualifications]
+## Qualifications:[Your Qualifications]
 
 Welcome to the course report for the [Course Name]! This README document provides an overview of the course, its mini projects and final project.
 
@@ -21,8 +21,7 @@ Welcome to the course report for the [Course Name]! This README document provide
 
 Below is a table summarizing the mini projects and final project completed during the course:
 
-| Description                               | Link                                    |
-|-------------------------------------------|-----------------------------------------|
-| Mini Projects: [Project Description]     | [Project Link]                         |
-| Final Project: [Project Description]     | [Project Link]                         |
-
+| Description                                                 | Link                                    |
+|-------------------------------------------------------------|-----------------------------------------|
+| Mini Projects: [Project Description] | [Project Link] |
+| Final Project: [Project Description] | [Project Link] |

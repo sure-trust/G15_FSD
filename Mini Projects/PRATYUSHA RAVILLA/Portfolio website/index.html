@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pratyusha's Portfolio website</title>
+    <link rel="stylesheet" href="index.css"> 
+
+    <link rel="icon" href="images/p.jpeg">
+ <script src="https://kit.fontawesome.com/1a7bdf7876.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+
+  <div class="container">
+    <nav>
+        <img src="images/Untitled_logo_1_free-file.jpg" class="logo">
+      
+      
+      <ul id="sidemenu">
+
+        <li> <a href="#header">Home</a></li>
+        <li> <a href="#about">About</a></li>
+        <li> <a href="#services">Services</a></li>
+        <li> <a href="#portfolio">Portfolio</a></li>
+        <li> <a href="#contact">Contact</a></li>
+        
+      <i class="fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
+      </ul>
+
+      <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+    </nav>
+    <div class="header-text">
+      <p>Full Stack Web Developer</p>
+    <h1>Hi, I am <span>Pratyusha</span> Chowdary.
+     </h1>
+    </div>
+  </div>
+</div> 
+
+<!-- --------------about--------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/Sonoio.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Computer science graduate with a passion for developing scalable web applications and working across the full stack. I am looking to join forces with Red Technologies to continue to grow my skill set while contributing to the positive outcome of making people "richer, smarter, and happier."</p>
+
+          <div class="tab-titles">
+
+      
+          <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+            <p class="tab-links" onclick="openTab('education')">Education</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+
+              <li><span>UI/UX</span><br>Designing web/App Interfaces</li>
+              <li><span>Web Development</span><br>Web app Development</li>
+              <li><span>App Development</span><br>Building Android/iOS Apps</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+
+            <li><span>2022 - Current</span><br>Designing web/App Interfaces</li>
+              <li><span>2021 - 2022</span><br>Web app Development</li>
+              <li><span>2020 - 2021</span><br>Building Android/iOS Apps</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+
+              <li><span>2022</span><br>Master of Computer Applications</li>
+              <li><span>2017</span><br>Bachelor of Computer Science</li>
+              <li><span>2015</span><br>Intermediate</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- ----------------services-------------- -->
+       <div id="services">
+        <div class="container">
+          <h1 class="sub-title">My Services</h1>
+          <div class="services-list">
+            <div>
+              <i class="fa-solid fa-code"></i>
+              <h2>Web Design</h2>
+              <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,Lorem ipsum dolor sit amet consectetur adipisicing elit. Error</p> -->
+              <p>Web design is an ever-evolving field, driven by technological advancements and changing user preferences. Staying up-to-date with industry trends and user behaviors is essential for web designers to create websites that not only look great but also provide exceptional user experiences. Effective web design is a powerful tool for businesses and organizations to establish an online presence, connect with their audience, and achieve their goals on the internet.  Web design is an ever-evolving field, driven by technological advancements and changing user preferences.</p>
+
+              <a href="#">learn more</a>
+            </div>
+
+            <div>
+              <i class="fa-solid fa-crop-simple"></i>
+              <h2>UI/UX Design</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,Lorem ipsum dolor sit amet consectetur adipisicing elit. Error</p>
+              <a href="#">learn more</a>
+            </div>
+
+            <div>
+          
+              <i class="fa-brands fa-app-store"></i>
+              <h2>App Design</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,Lorem ipsum dolor sit amet consectetur adipisicing elit. Error</p>
+              <a href="#">learn more</a>
+            </div>
+          </div>
+        </div>
+       </div>
+
+       <!-- ----------portfolio--------- -->
+
+       <div id="portfolio">
+        <div class="container">
+          <h1 class="sub-title">My work</h1>
+          <div class="work-list">
+
+            <div class="work">
+              <img src="images/work-1.png">
+              <div class="layer">
+                <h3>Social Media App</h3>
+                <p>The app connects you to the talented people around the world. Download it from Play Store or App Store.</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+
+            <div class="work">
+              <img src="images/work-2.png">
+              <div class="layer">
+                <h3>MusicApp</h3>
+                <p>The app connects you to the talented people around the world. Download it from Play store or App Store.</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+
+            <div class="work">
+              <img src="images/work-3.png">
+              <div class="layer">
+                <h3>Online Shopping App</h3>
+                <p>The app connects you to the talented people around the world. Download it from Play Store or App Store.</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn">See more</a>
+        </div>
+       </div>
+
+       <!--  ---------contact--------- -->
+
+       <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p><i class="fa-solid fa-envelope"></i>   pratyusharavilla123@gmail.com</p>
+              <p><i class="fa-solid fa-square-phone"></i>  7731948474</p>
+              <div class="social-icons">
+                <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+
+              </div>
+
+               <a href="images/my-cv.pdf" download class="btn btn2" >Download CV</a>
+            </div>
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="your Name" required>
+                <input type="email" name="Email" placeholder="Enter your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+              </form>
+              <span id="msg"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>Copyright <i class="fa-solid fa-copyright fa-fade"></i> Chowdary. Made wih <i class="fa-solid fa-heart fa-beat"></i> by Pratyusha Chowdary...</p>
+        </div>
+       </div>
+
+  <script>
+
+    
+      let tablinks = document.getElementsByClassName('tab-links');
+      let tabcontents = document.getElementsByClassName('tab-contents');
+
+        function openTab(tabname){
+
+          for(tablink of tablinks){
+            tablink.classList.remove('active-link');
+          }
+          for(tabcontent of tabcontents){
+            tabcontent.classList.remove('active-tab');
+          }
+          event.currentTarget.classList.add('active-link');
+          document.getElementById(tabname).classList.add('active-tab');
+        }
+  </script>
+
+  <script>
+    var sidemenu=document.getElementById('sidemenu');
+
+    function openMenu(){
+         sidemenu.style.right="0";
+    }
+
+    function closeMenu(){
+      sidemenu.style.right ="-200px";
+    }
+
+  </script>
+
+  <!--  Google sheet script -->
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbz22eH2LsXrqzvrwPVS7sY1GJkG3UicMSz9iKIcpPWPcAcmtt5INcEL2qFG7gFEgpJtIg/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById('msg')
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully";
+        setTimeout(function(){
+          msg.innerHTML = "" ;
+        },4000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
