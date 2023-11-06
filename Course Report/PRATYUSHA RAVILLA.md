@@ -23,5 +23,5 @@ Below is a table summarizing the mini projects and final project completed durin
 
 | Description                                                 | Link                                    |
 |-------------------------------------------------------------|-----------------------------------------|
-| Mini Projects: [Mini Projects using HTML,CSS,BOOTSTRAP,JAVASCRIPT,REACTJS] |[Click Here][https://github.com/sure-trust/G15_FSD/tree/main/Mini%20Projects/PRATYUSHA%20RAVILLA] |
-| Final Project: [MERN Stack Doctor Appointment Booking Website, API Calling & Fetching Data in React Js, Context API, Custom Hook with mongoDB as backend] |[Click Here][https://github.com/sure-trust/G15_FSD/tree/main/Final%20Capstone%20Project/PRATYUSHA%20RAVILLA/Medico.in] |
+| Mini Projects: [Mini Projects using HTML,CSS,BOOTSTRAP,JAVASCRIPT,REACTJS] |[Click Here](https://github.com/sure-trust/G15_FSD/tree/main/Mini%20Projects/PRATYUSHA%20RAVILLA) |
+| Final Project: [MERN Stack Doctor Appointment Booking Website, API Calling & Fetching Data in React Js, Context API, Custom Hook with mongoDB as backend] |[Click Here](https://github.com/sure-trust/G15_FSD/tree/main/Final%20Capstone%20Project/PRATYUSHA%20RAVILLA/Medico.in) |
