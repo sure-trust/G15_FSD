@@ -21,17 +21,11 @@ To enroll in the FSD course, please visit the official SURE Trust website: [Cour
 
 |Students Name|Link|
 |-------------|----|
-|Edagottu Chandana|[click here](link)|
-|Hema Sathwika|[click here](link)|
-|Kancherla Naveen Kumar|[click here](link)|
-|kanchi Haribabu|[click here](link)|
-|M Mamatha|[click here](link)|
-|Meghana S|[click here](link)|
-|Nithish Varma|[click here](link)|
-|Pratyusha Ravilla|[click here](link)|
-|S Kavitha|[click here](link)|
-|Shamanth Giddaluru|[click here](link)|
-|Trisha Sudhakar|[click here](link)|
+|Kancherla Naveen Kumar|[click here](https://github.com/sure-trust/G15_FSD/blob/main/Course%20Report/KANCHERLA%20NAVEEN%20KUMAR.md)|
+|M Mamatha|[click here](https://github.com/sure-trust/G15_FSD/blob/main/Course%20Report/MamathaReddy.md)|
+|Meghana S|[click here](https://github.com/sure-trust/G15_FSD/blob/main/Course%20Report/meghana.md)|
+|Pratyusha Ravilla|[click here](https://github.com/sure-trust/G15_FSD/blob/main/Course%20Report/PRATYUSHA%20RAVILLA.md)|
+|Trisha Sudhakar|[click here](https://github.com/sure-trust/G15_FSD/blob/main/Course%20Report/Trisha%20S.md)|
 
 
 ## Repository Description
